@@ -1,0 +1,87 @@
+$sidebar-lg-width: 270px;
+$nav-height: 60px;
+$sidebar-md-width: $nav-height;
+
+
+//main header
+
+#primary-header{
+	background-color:red;
+	height:$nav-height;
+	line-height: $nav-height;
+	z-index: 1030;
+	position:fixed;
+	margin: 0;
+	width:100%;
+	.container-fluid{
+		padding-left:0;
+		padding-right:0;
+			@include breakpoint(sm) {
+				padding-left:15px;
+				padding-right:15px;
+  		}
+	}
+	.navbar-header{
+		float: left;
+		height:$nav-height;
+		background:blue;
+		display: block;
+		.navbar-brand{
+			width:($sidebar-lg-width - $sidebar-md-width);
+			display:block;
+		}
+		.toggle-container{
+			width:$sidebar-md-width;
+			background-color: green;
+			float: left;
+			display: inline-block;
+			ul.toggle{
+				width:100%;
+				margin:0;
+				padding:0;
+				float: left;
+				li{
+					float: left;
+					width:100%;
+					text-align: center;
+					a{
+						height:$nav-height;
+						line-height: ($nav-height - 1);
+						padding:0;
+						display:block;
+					}
+				}
+			}
+		}
+	}
+}
+
+//sidebar
+
+aside.sidebar-menu{
+		float: left;
+		left:auto;
+	  position: fixed;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    width: $sidebar-lg-width;
+    background-color: #21252a;
+    padding-top:$nav-height;
+    overflow-y:scroll;
+    @include breakpoint(md) {
+    	width:$sidebar-md-width;
+  	}
+	.viewport{
+		overflow:hidden;
+		position:relative!important;
+		width:100%!important;
+		top:0;
+		bottom:0;
+	}
+}
+
+section#main{
+	margin-left:$sidebar-lg-width;
+	padding-top:$nav-height;
+}

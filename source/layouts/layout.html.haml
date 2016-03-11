@@ -4,8 +4,10 @@
     = partial "shared/scripts"
     %body{:class => page_classes}
       = partial "layouts/header"
+      = partial "layouts/primary-nav"
       /end menu
-      .main
-        = yield
+      %section#main
+        .container-fluid
+          = yield
       /end main content
       = partial "layouts/footer"
