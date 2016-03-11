@@ -1,0 +1,43 @@
+// typography baselines and @font face setups
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+
+//font base
+
+//open sans
+
+.font-normal-default{
+	font-family:$default-font-name;
+	font-weight: 400;
+}
+
+.font-semibold-default{
+	font-family:$default-font-name;
+	font-weight: 600;
+}
+
+.font-bold-default{
+	font-family:$default-font-name;
+	font-weight: 700;
+}
+
+
+//montserrat
+
+.font-normal-montserrat{
+	font-family:$montserrat-font-name;
+	font-weight: 400;
+}
+
+.font-bold-montserrat{
+	font-family:$montserrat-font-name;
+	font-weight: 700;
+}
