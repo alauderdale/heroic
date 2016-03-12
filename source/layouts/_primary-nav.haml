@@ -1,6 +1,20 @@
 %aside.sidebar-menu
 	.viewport
 		%section.primary-menu-content-lg
+			%ul.menu-section.border-bottom.player-container
+				%li
+					.player-select
+						%h3.pull-left
+							%a{:href=>"#"}
+								%img.img-circle.menu-avatar.quarter-margin-right{:src=>"http://placehold.it/32x32"}
+								Clash of Clans
+								%i.material-icons.md-18
+									keyboard_arrow_down
+					.player-settings
+						%a.pull-right{:href=>"#"}
+							%i.material-icons.md-18
+								settings
+					.clearfix
 			%ul.menu-section.border-bottom
 				%li
 					%p{"aria-controls" => "control-panel", "aria-expanded" => "true", "data-target" => "#control-panel", "data-toggle" => "collapse"}

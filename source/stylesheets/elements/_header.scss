@@ -117,10 +117,41 @@ aside.sidebar-menu{
 					&.border-bottom{
 						border-color:$black-20;
 					}
+					&.player-container{
+						li{
+							background: rgba(255,255,255,.05);
+							.player-select{
+								i{
+									position: relative;
+									top:5px;
+									color:$black-20;
+								}
+							}
+							.player-settings{
+								a{
+									background: rgba(255,255,255,.10);
+									display: block;
+									height: 52px;
+									width: 65px;
+									text-align: center;
+									line-height: 52px;
+									border-left:1px solid $black-20;
+									i{
+										position: relative;
+										top:3px;
+									}
+								}
+							}
+						}
+					}
 					li{
 						font-family:$montserrat-font-name;
 						font-weight: 400;
 						letter-spacing: 0.5px;
+						h3{
+							font-size: 14px;
+							margin:10px 0px 10px 10px;
+						}
 						p{
 							padding:15px 10px 5px 10px;
 							cursor:pointer;
