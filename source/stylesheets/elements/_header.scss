@@ -1,18 +1,19 @@
 $sidebar-lg-width: 270px;
-$nav-height: 60px;
+$nav-height: 70px;
 $sidebar-md-width: $nav-height;
 
 
 //main header
 
 #primary-header{
-	background-color:red;
+	background-color:$background-color;
 	height:$nav-height;
 	line-height: $nav-height;
 	z-index: 1030;
 	position:fixed;
 	margin: 0;
 	width:100%;
+	border-bottom: 1px solid $light-grey-three;
 	.container-fluid{
 		padding-left:0;
 		padding-right:0;
@@ -23,19 +24,27 @@ $sidebar-md-width: $nav-height;
 	}
 	.navbar-header{
 		float: left;
-		height:$nav-height;
-		background:blue;
+		height:$nav-height ;
+		background:$bluish;
 		display: block;
+		border-bottom:1px solid $black-20 !important;
 		.navbar-brand{
 			width:($sidebar-lg-width - $sidebar-md-width);
 			display:block;
+			a.logo{
+				display:block;
+				width: 171px;
+  			height: 40px;
+				background: url(../images/logo.svg);
+				background-size: 171px 40px;
+			}
 		}
 		.toggle-container{
 			width:$sidebar-md-width;
-			background-color: green;
+			background-color: $bluish;
 			float: left;
 			display: inline-block;
-			ul.toggle{
+			ul{
 				width:100%;
 				margin:0;
 				padding:0;
@@ -44,11 +53,23 @@ $sidebar-md-width: $nav-height;
 					float: left;
 					width:100%;
 					text-align: center;
+					border:none;
 					a{
-						height:$nav-height;
+						position:relative;
+						top:7px;
+						height:$nav-height -1;
 						line-height: ($nav-height - 1);
 						padding:0;
 						display:block;
+						border:none;
+						color:rgba(255,255,255,.7);
+						&:hover,&:active, &:focus{
+							background:transparent;
+							color:rgba(255,255,255,.7);
+						}
+						&:hover{
+							color:white;
+						}
 					}
 				}
 			}
@@ -59,6 +80,7 @@ $sidebar-md-width: $nav-height;
 //sidebar
 
 aside.sidebar-menu{
+		color:white;
 		float: left;
 		left:auto;
 	  position: fixed;
@@ -66,22 +88,129 @@ aside.sidebar-menu{
     top: 0;
     bottom: 0;
     width: $sidebar-lg-width;
-    background-color: #21252a;
+    background-color: $bluish;
     padding-top:$nav-height;
     overflow-y:scroll;
-    @include breakpoint(md) {
-    	width:$sidebar-md-width;
-  	}
-	.viewport{
-		overflow:hidden;
-		position:relative!important;
-		width:100%!important;
-		top:0;
-		bottom:0;
-	}
+    @include transform( 0.2s ease);
+   a{
+   	color:rgba(255,255,255,.7);
+   	display:block;
+   	&:focus{
+   		text-decoration: none;
+   	}
+   	&:hover{
+   		color:white;
+   		text-decoration:none;
+   	}
+   }
+		.viewport{
+			overflow:hidden;
+			position:relative!important;
+			width:100%!important;
+			top:0;
+			bottom:0;
+			section.primary-menu-content-lg{
+				ul.menu-section{
+					list-style:none;
+					padding:0;
+					margin:0;
+					&.border-bottom{
+						border-color:$black-20;
+					}
+					li{
+						font-family:$montserrat-font-name;
+						font-weight: 400;
+						letter-spacing: 0.5px;
+						p{
+							padding:15px 10px 5px 10px;
+							cursor:pointer;
+							&.collapsed{
+									.caret{
+										@include transform(rotate(-90deg));
+									}
+							}
+							.caret{
+								position: relative;
+								top:-2px;
+							}
+						}
+						ul{
+							margin:10px 0 14px 0;
+							list-style: none;
+							li{
+								font-size: 15px;
+								&.active{
+									background-color: $black-20;
+									a{
+										color:white;
+										i{
+											color:white;
+										}
+									}
+								}
+								a{
+										padding:9px 15px 9px 22px;
+										i{
+											position: relative;
+											top: 3px;
+											color:rgba(255,255,255,.4);
+										}
+								}
+							}
+						}
+					}
+					.team-actions{
+						margin-bottom:-35px;
+						margin-right:15px;
+						margin-top:15px;
+					}
+					ul.team-list{
+						padding:0 10px;
+						li{
+							padding:5px 0px;
+							float: left;
+							&.online{
+								&:before{
+									content:'';
+									width:10px;
+									height:10px;
+									background-color: $green-color;
+									float: left;
+									position: relative;
+									border-radius:100px;
+									bottom:-25px;
+									right:-30px;
+									border:1px solid $bluish;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 }
 
 section#main{
 	margin-left:$sidebar-lg-width;
 	padding-top:$nav-height;
+}
+
+
+html.screen-md{
+	section#main{
+		margin-left:$sidebar-md-width;
+	}
+	#primary-header{
+		.navbar-header{
+			.navbar-brand{
+				display:none;
+			}
+		}
+	}
+	aside.sidebar-menu{
+		left:($sidebar-md-width - $sidebar-lg-width );
+		.primary-menu-content-lg{
+			display: none;
+		}
+	}
 }

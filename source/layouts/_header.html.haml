@@ -1,14 +1,12 @@
 %header#primary-header
 	.container-fluid
 		.navbar-header
-			.navbar-brand.hidden-sm.hidden-xs
-				.logo
-					%p
-						Heroic
+			.navbar-brand
+				%a.logo{:href=>"#"}
 			.toggle-container
-				%ul.nav.navbar-nav.toggle
+				%ul.nav.navbar-nav
 					%li
-						%a{:href=>"#"}
+						%a.toggle-nav{:href=>"#"}
 							%i.material-icons.md-18
 								menu
 		.navbar-toolbar

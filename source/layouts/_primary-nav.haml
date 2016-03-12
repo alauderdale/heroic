@@ -1,3 +1,72 @@
 %aside.sidebar-menu
 	.viewport
-		%section.content
+		%section.primary-menu-content-lg
+			%ul.menu-section.border-bottom
+				%li
+					%p{"aria-controls" => "control-panel", "aria-expanded" => "true", "data-target" => "#control-panel", "data-toggle" => "collapse"}
+						%span.caret
+						CONTROL PANEL
+					%ul#control-panel.collapse.in
+						%li.active
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									people
+								%span.menu-text
+									Manage Players
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									assistant_photo
+								%span.menu-text
+									Leaderboards
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									dns
+								%span.menu-text
+									Data Storage
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									insert_chart
+								%span.menu-text
+									Telemetry
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									insert_drive_file
+								%span.menu-text
+									Asset Library
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									cloud_done
+								%span.menu-text
+									Cloud Code
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18.menu-icon
+									bug_report
+								%span.menu-text
+									API Debugger
+			%ul.menu-section
+				%li
+					.team-actions.clearfix
+						%span.pull-right
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									more_horiz
+						%span.pull-right.quarter-margin-right
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									add_circle_outline
+					%p{"aria-controls" => "team", "aria-expanded" => "true", "data-target" => "#team", "data-toggle" => "collapse"}
+						%span.caret
+						TEAM
+					%ul#team.team-list.collapse.in
+						-9.times do
+							%li.online
+								%img.img-circle.menu-avatar{:src=>"http://placehold.it/32x32"}
+						.clearfix
+							
+
