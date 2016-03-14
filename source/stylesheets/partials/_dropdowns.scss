@@ -1,0 +1,12 @@
+ul.dropdown-menu{
+	border:1px solid $light-grey-four;
+	box-shadow: none;
+	li{
+			font-size: 12px;
+	}
+	&.dropdown-lg{
+		li{
+
+		}
+	}
+}

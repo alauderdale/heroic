@@ -7,7 +7,56 @@
 				%ul.nav.navbar-nav
 					%li
 						%a.toggle-nav{:href=>"#"}
-							%i.material-icons.md-18
+							%i.material-icons.md-24
 								menu
 		.navbar-toolbar
-			.nav.navbar-nav
+			%ul.nav.navbar-nav.navbar-left
+				%li
+					%ol.breadcrumb
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									home
+						%li.current
+							%a{:href=>"#"}
+								Player Management
+			%ul.nav.navbar-nav.navbar-right.global-actions
+				%li.border-left
+					%a{:href=>"#"}
+						%i.material-icons.md-24
+							flash_on
+				%li.border-left
+					%a{:href=>"#"}
+						%i.material-icons.md-24
+							notifications
+						%ul.count
+							%li
+								4
+				%li.border-left.admin-dropdown
+					%a{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
+						%img.img-circle{:width=>"34px", :height=>"34px", :src=>"http://placehold.it/34x34"}
+						PonsGroup
+						%i.material-icons.md-18
+							expand_more
+					%ul.dropdown-menu
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									videogame_asset
+								My Games
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									account_circle
+								My Account
+						%li
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									payment
+								Billing Info
+						%li.active
+							%a{:href=>"#"}
+								%i.material-icons.md-18
+									exit_to_app
+								Logout
+
