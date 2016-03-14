@@ -1,0 +1,111 @@
+.base-heroic-table{
+	.panel-default{
+		padding: 0;
+		border-radius:0;
+		border-color:$light-grey-three;
+		.panel-heading{
+			padding: 0;
+			background: white;
+			border-radius:0;
+			border-color:$light-grey-three;
+			border-bottom:none;
+			.form-group{
+				margin-bottom: 0;
+				&.search-form{
+					position: relative;
+					top:3px;
+					.input-group{
+						width: 600px;
+					}
+					.input-group-addon{
+						background: white;
+						border:none;
+						color: $steel-grey;
+						padding-right: 0
+					}
+					input{
+						border:none;
+						width:600px;
+						box-shadow: none;
+						font-weight: 600;
+						font-size: 12px;
+						&:focus{
+							border:none;
+						}
+					}
+				}
+				.btn-info{
+					border-radius: 0;
+					background-color: white;
+					&.bordered{
+						border-left:1px solid $light-grey-three;
+						border-right:1px solid $light-grey-three;
+					}
+					&:last-of-type{
+						border-right:none;
+					}
+					&:hover{
+						background: $light-grey-six!important;
+					}
+					&.filter-tggle{
+						background-color: $light-grey-six;
+						box-shadow:0 1px 0 $light-grey-six;
+						&.collapsed{
+							background: white;
+							box-shadow: none;
+						}
+					}
+					&:focus{
+						outline:none;
+					}
+				}
+			}
+		}
+		.panel-body{
+			border-color:$light-grey-three;
+			background-color: $light-grey-six;
+			border-top:1px solid $light-grey-three;
+			&.filters{
+				.btn-clear{
+					position: relative;
+					right: 60px;
+					top: 16px;
+				}
+			}
+		}
+	}
+	thead{
+		th{
+			text-transform: uppercase;
+			color:$steel-grey;
+			font-family:$montserrat-font-name;
+			font-size: 12px;
+			border-top:1px solid!important;
+			border-color:$light-grey-three!important;
+			border-bottom-width: 1px!important;
+			font-weight: 400;
+			background-color: $light-grey-seven;
+			&.active{
+				background: $light-grey-seven!important;
+				font-weight: 700;
+				color: $charcoal-grey;
+
+			}
+		}
+	}
+	tr{
+		border-color:$light-grey-three;
+	}
+	td{
+		border:none!important;
+		font-size: 13px;
+		.muted{
+			color: $light-grey-three
+		}
+	}
+	tr{
+		&:nth-of-type(odd){
+			background-color: $duck-egg-blue!important;
+		}
+	}
+}

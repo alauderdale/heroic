@@ -1,0 +1,105 @@
+
+.base-heroic-table
+  .panel.panel-default
+    .panel-heading 
+      .form-group.pull-left.table-actions.search-form
+        .form-inline
+          .form-group
+            .input-group
+              .input-group-addon
+                %i.material-icons.md-18
+                  search
+              %input.search.form-control{:placeholder => "What you looking for?", :type => "text"}
+      .form-group.pull-right
+        .btn-group{:role=>"group"}
+          %button.btn.btn-sm.btn-info.bordered{:type=>"button"}
+            %i.material-icons.md-18
+              star_border
+          %button.btn.btn-sm.btn-info.filter-tggle.bordered.collapsed{"aria-controls" => "search-filters", "aria-expanded" => "false", "data-target" => "#search-filters", "data-toggle" => "collapse",:type=>"button"}
+            %i.material-icons.md-18
+              filter_list
+      .clearfix
+    #search-filters.collapse
+      .panel-body.filters
+        %form
+          .row
+            .col-xs-2
+              .form-group
+                %label.label-sm
+                  Where
+                %select.input-sm.form-control
+                  %option
+                    User
+            .col-xs-3
+              .form-group
+                %label.label-sm
+                  Where
+                .input-group.search
+                  .input-group-addon
+                    %i.material-icons.md-18
+                      search
+                  %input.input-sm.form-control
+            .col-xs-1
+              %h4.margin-top.text-center
+                AND
+            .col-xs-3
+              .form-group
+                %label.label-sm
+                  Where
+                %select.input-sm.form-control
+                  %option
+                    Deposits
+            .col-xs-3
+              .row
+                .col-xs-5
+                  %label.label-sm
+                    Min
+                  %input.input-sm.form-control
+                .col-xs-5{:style=>"position:relative; left:-31px;"}
+                  %label.label-sm
+                    Min
+                  %input.input-sm.form-control
+                .col-xs-2
+                  %button.btn.btn-info.btn-clear{:type=>"button"}
+                    %i.material-icons.md-18
+                      cancel
+
+
+    %table.table.table-striped
+      %thead
+        %tr
+          %th
+            %input{:type=>"checkbox"}
+          %th.active.asc
+            Username
+            .caret
+          %th 
+            Name
+          %th 
+            Player ID
+          %th 
+            Active Since
+          %th 
+            Achievements
+          %th 
+            Deposits
+      %tbody
+        -30.times do
+          %tr
+            %td 
+              
+            %td 
+              jdoe
+            %td 
+              John Doe
+            %td 
+              4445555555
+            %td 
+              March 31, 2010
+            %td 
+              122
+            %td 
+              %span.muted
+                $
+              44
+

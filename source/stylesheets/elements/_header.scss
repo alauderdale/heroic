@@ -11,6 +11,7 @@ $sidebar-md-width: 60px;
 	line-height: $nav-height;
 	z-index: 1030;
 	position:fixed;
+	min-width: 700px;
 	width:100%;
 	border-bottom: 1px solid $light-grey-three;
 	.navbar-nav{
@@ -129,7 +130,7 @@ $sidebar-md-width: 60px;
 			li{
 				font-size: 19px;
 				a{
-					color:$light-grey-three;
+					color:$light-grey-five;
 					padding:21px 26px;
 					&:active, &:focus, &:hover{
 						background-color: $light-grey-four;
@@ -149,6 +150,9 @@ $sidebar-md-width: 60px;
 					ul.dropdown-menu{
 						width:196px;
 						padding: 0;
+						background: white;
+						border-radius:0;
+						border:1px solid $light-grey-three;
 						li{
 							font-size: 15px;
 							color:$charcoal-grey;
@@ -163,6 +167,9 @@ $sidebar-md-width: 60px;
 								&:hover{
 									color:white;
 									background-color: $charcoal-grey;
+									i{
+										color:white;
+									}
 								}
 								i{
 									color:$light-grey-three;
@@ -355,6 +362,7 @@ html.screen-md{
 			ul.menu-section{
 				li{
 					ul{
+						margin: 0;
 						li{
 								ul.count{
 									position: relative;

@@ -1,0 +1,27 @@
+%secrion
+	.container-fluid
+		.row
+			.col-lg-12
+				.pull-left
+					%ul.list-inline.no-margin-bottom
+						%li
+							%h4
+								PLAYER DIRECTORY
+						%li
+							%h3
+								45 results
+						%li
+							%p.font-semibold-default
+								• Your query is:
+						%li
+							%p.muted.font-semibold-default
+								where(user), where(deposits) greater than(1000) 
+				.pull-right
+					%ul.list-inline.overflow.no-margin-bottom
+						%li
+							%a.btn.btn-info.btn-sm{:href=>"#"}
+								%i.material-icons.md-18
+									more_horiz
+		.row
+			.col-lg-12
+				=partial"player-table"

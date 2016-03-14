@@ -1,0 +1,29 @@
+.form-control{
+	border-color:$light-grey-three;
+	box-shadow: none;
+	border-radius: 0;
+	background: white;
+	&:focus{
+		box-shadow: none;
+		border:1px solid $lightblue;
+	}
+}
+
+
+
+label{
+	text-transform: uppercase;
+	font-weight: 400;
+	&.label-sm{
+		font-size: 10px;
+	}
+}
+
+	.input-group-addon{
+		background: white;
+		color: $steel-grey;
+		border-color:$light-grey-three;
+		padding-bottom: 2px;
+		border-radius: 0;
+		border-right:none!important;
+	}	

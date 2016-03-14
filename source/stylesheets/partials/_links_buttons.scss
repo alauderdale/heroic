@@ -1,9 +1,36 @@
 a{
 	text-decoration: none;
-	&:active{
+	color:$water-blue;
+	&:active, &:focus{
 		text-decoration: none;
 	}
 	&:hover{
 		text-decoration: none;
+	}
+}
+
+.btn{
+	&:focus{
+		outline:none;
+	}
+	&:active{
+		box-shadow: none;
+		outline:none;
+	}
+	&.btn-info{
+		color: $light-grey-five;
+		background-color: transparent;
+		border:none;
+		&:hover{
+			color: shade($light-grey-five, 20%);
+		}
+		&:active{
+		box-shadow: none;
+		outline:none;
+		background: transparent!important;
+		}
+		i{
+			line-height: 30px;
+		}
 	}
 }
