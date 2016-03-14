@@ -165,11 +165,7 @@ $sidebar-md-width: 60px;
 							a{
 								padding: 15px;
 								&:hover{
-									color:white;
-									background-color: $charcoal-grey;
-									i{
-										color:white;
-									}
+									background-color: $extra-light-blue;
 								}
 								i{
 									color:$light-grey-three;
@@ -238,8 +234,10 @@ aside.sidebar-menu{
 					margin:0;
 					&.player-container{
 						li{
-							background: rgba(255,255,255,.05);
 							.player-select{
+								a{
+									color: white;
+								}
 								i{
 									position: relative;
 									top:5px;
@@ -248,13 +246,16 @@ aside.sidebar-menu{
 							}
 							.player-settings{
 								a{
-									background: rgba(255,255,255,.10);
 									display: block;
 									height: 52px;
 									width: 65px;
 									text-align: center;
 									line-height: 52px;
 									border-left:1px solid $black-20;
+									color:$black-20;
+									&:hover{
+										color:white;
+									}
 									i{
 										position: relative;
 										top:3px;
