@@ -1,5 +1,5 @@
 .container-fluid{
-	min-width:767px;
+	min-width:708px;
 }
 
 
@@ -17,4 +17,9 @@ margin-right: -15px !important;
 
 .navbar-right {
 float: right!important;
+}
+
+.page-header{
+	border:none;
+	margin-top: 32px;
 }

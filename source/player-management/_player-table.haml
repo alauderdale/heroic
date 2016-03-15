@@ -12,9 +12,30 @@
               %input.search.form-control{:placeholder => "What you looking for?", :type => "text"}
       .form-group.pull-right
         .btn-group{:role=>"group"}
-          %button.btn.btn-sm.btn-info.bordered{:type=>"button"}
-            %i.material-icons.md-18
-              star_border
+          .dropdown.pull-left
+            %button.btn.btn-sm.btn-info.bordered{:type=>"button", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
+              %i.material-icons.md-18
+                star_border
+            %ul.dropdown-menu.items-search.dropdown-list-default
+              %li.dropdown-header
+                .form-group.pull-left
+                  %a.btn.btn-link.quarter-margin-right.action-btn
+                    %i.material-icons.md-24
+                      add_circle_outline
+                .form-group.pull-left
+                  .input-group{:style=>"width:232px;"}
+                    %input.search.form-control{:placeholder => "Saved Searches", :type => "text"}
+                .clearfix
+              -10.times do
+                %li
+                  %a{:href=>"#"}
+                    %span.item
+                      .pull-left
+                        Recently Active
+                      .pull-right
+                        %span.info-right
+                          12/11
+                      .clearfix
           %button.btn.btn-sm.btn-info.filter-tggle.bordered.collapsed{"aria-controls" => "search-filters", "aria-expanded" => "false", "data-target" => "#search-filters", "data-toggle" => "collapse",:type=>"button"}
             %i.material-icons.md-18
               filter_list
@@ -23,14 +44,14 @@
       .panel-body.filters
         %form
           .row
-            .col-xs-2
+            .col-md-2.col-xs-4
               .form-group
                 %label.label-sm
                   Where
                 %select.input-sm.form-control
                   %option
                     User
-            .col-xs-3
+            .col-md-3.col-xs-7
               .form-group
                 %label.label-sm
                   Where
@@ -39,17 +60,17 @@
                     %i.material-icons.md-18
                       search
                   %input.input-sm.form-control
-            .col-xs-1
+            .col-md-1.col-xs-1
               %h4.margin-top.text-center
                 AND
-            .col-xs-3
+            .col-md-3.col-xs-4
               .form-group
                 %label.label-sm
                   Where
                 %select.input-sm.form-control
                   %option
                     Deposits
-            .col-xs-3
+            .col-md-3.col-xs-8
               .row
                 .col-xs-5
                   %label.label-sm
@@ -64,42 +85,63 @@
                     %i.material-icons.md-18
                       cancel
 
-
-    %table.table.table-striped
-      %thead
-        %tr
-          %th
-            %input{:type=>"checkbox"}
-          %th.active.asc
-            Username
-            .caret
-          %th 
-            Name
-          %th 
-            Player ID
-          %th 
-            Active Since
-          %th 
-            Achievements
-          %th 
-            Deposits
-      %tbody
-        -30.times do
+    .table-responsive
+      %table.table.table-striped{:style=>"min-width:767px;"}
+        %thead
           %tr
-            %td 
+            %th
+              %input{:type=>"checkbox"}
+            %th.active.asc
+              Username
+              .caret
+            %th 
+              Name
+            %th 
+              Player ID
+            %th 
+              Active Since
+            %th 
+              Achievements
+            %th 
+              Deposits
+            %th.actions-column
               
-            %td 
-              jdoe
-            %td 
-              John Doe
-            %td 
-              4445555555
-            %td 
-              March 31, 2010
-            %td 
-              122
-            %td 
-              %span.muted
-                $
-              44
+        %tbody
+          -30.times do
+            %tr
+              %td 
+                %input.visible-sm.visible-xs{:type=>"checkbox"}
+              %td 
+                jdoe
+              %td 
+                John Doe
+              %td 
+                4445555555
+              %td 
+                March 31, 2010
+              %td 
+                122
+              %td 
+                %span.muted
+                  $
+                44
+              %td.table-actions-row
+                .table-actions
+                  .dropdown
+                    %a.btn.btn-link{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
+                      %i.material-icons.md-18
+                        more_vert
+                    %ul.dropdown-menu.list-inline
+                      %li
+                        %a{:href=>"#"}
+                          %i.material-icons.md-18
+                            mode_edit
+                      %li
+                        %a{:href=>"#"}
+                          %i.material-icons.md-18
+                            star
+                      %li
+                        %a{:href=>"#"}
+                          %i.material-icons.md-18
+                            delete
 

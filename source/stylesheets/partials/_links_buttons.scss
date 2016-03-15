@@ -17,6 +17,13 @@ a{
 		box-shadow: none;
 		outline:none;
 	}
+	&.action-btn{
+		color:$light-grey-five;
+		&:hover{
+			color: shade($light-grey-five, 20%);
+			background: transparent;
+		}
+	}
 	&.btn-info{
 		color: $light-grey-five;
 		background-color: transparent;

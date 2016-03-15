@@ -2,7 +2,7 @@
 	.container-fluid
 		.navbar-header
 			.navbar-brand
-				%a.logo{:href=>"#"}
+				%a.logo{:href=>"/player-management"}
 			.toggle-container
 				%ul.nav.navbar-nav
 					%li
@@ -14,12 +14,12 @@
 				%li
 					%ol.breadcrumb
 						%li
-							%a{:href=>"#"}
+							%a{:href=>"/player-management"}
 								%i.material-icons.md-18
 									home
 						%li.current
 							%a{:href=>"#"}
-								Player Management
+								=data.page.page_title
 			%ul.nav.navbar-nav.navbar-right.global-actions
 				%li.border-left
 					%a{:href=>"#"}
@@ -34,7 +34,7 @@
 								4
 				%li.border-left.admin-dropdown
 					%a{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
-						%img.img-circle{:width=>"34px", :height=>"34px", :src=>"http://placehold.it/34x34"}
+						%img.img-circle.admin-avatar{:width=>"34px", :height=>"34px", :src=>"http://placehold.it/34x34"}
 						PonsGroup
 						%i.material-icons.md-18
 							expand_more
@@ -45,7 +45,7 @@
 									videogame_asset
 								My Games
 						%li
-							%a{:href=>"#"}
+							%a{:href=>"/accounts"}
 								%i.material-icons.md-18
 									account_circle
 								My Account

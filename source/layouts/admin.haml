@@ -1,0 +1,13 @@
+<!doctype html>
+%html
+  %head
+    = partial "shared/scripts"
+    %body{:class => page_classes}
+      = partial "layouts/header"
+      = partial "layouts/admin-nav"
+      /end menu
+      %section#main
+        .container-fluid.no-padding
+          = yield
+      /end main content
+      = partial "layouts/footer"

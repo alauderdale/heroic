@@ -15,7 +15,7 @@
 					position: relative;
 					top:3px;
 					.input-group{
-						width: 600px;
+						width: 550px;
 					}
 					.input-group-addon{
 						background: white;
@@ -25,13 +25,19 @@
 					}
 					input{
 						border:none;
-						width:600px;
+						width:550px;
 						box-shadow: none;
-						font-weight: 600;
+						font-weight: 550;
 						font-size: 12px;
 						&:focus{
 							border:none;
 						}
+					}
+				}
+				.open{
+					.btn-info{
+						background-color: $light-grey-six;
+						box-shadow:0 1px 0 $light-grey-six;
 					}
 				}
 				.btn-info{
@@ -92,15 +98,79 @@
 
 			}
 		}
+		tr{
+			th{
+				padding-top:15px;
+				padding-bottom: 15px;
+			}
+		}
+	}
+	th{
+		&.actions-column{
+			width:168px;
+			  @include breakpoint(md) {
+			    
+			  }
+		}
 	}
 	tr{
 		border-color:$light-grey-three;
+		&:hover{
+			.dropdown{
+				visibility: visible!important;
+				text-align: right;
+			}
+		}
 	}
 	td{
 		border:none!important;
 		font-size: 13px;
 		.muted{
 			color: $light-grey-three
+		}
+		.table-actions{
+			.btn-link{
+				color: $light-grey-five;
+				padding: 0;
+				&:hover{
+					color: shade($light-grey-five, 20%);
+				}
+			}
+			.dropdown{
+				&.open{
+					text-align: left;
+				}
+				text-align: right;
+			  @include breakpoint(md) {
+			    visibility: visible;
+			    text-align: left;
+			  }
+				visibility: hidden;
+				ul.dropdown-menu{
+					background: $light-grey-seven;
+					border:none;
+					top: -10px;
+    			left: 25px;
+					min-width: 135px;
+					border-radius: 0;
+					list-style: none;
+					text-align: center;
+					li{
+						display: inline-block;
+						a{
+							padding: 3px 0px 2px 0px;
+							color:$light-grey-five;
+							&:hover{
+								color: shade($light-grey-five, 20%);
+								background-color: transparent;
+							}
+							i{
+								font-size: 22px;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 	tr{
@@ -109,3 +179,37 @@
 		}
 	}
 }
+
+// fix actions
+
+// @include breakpoint(md) {
+
+// .table>thead:last-child>tr:last-child>th:last-child
+// {
+//     position: absolute;
+//     display: inline-block;
+//     height:100%;
+// }
+// .table> tbody > tr > td:last-child
+// {
+//     position: absolute;
+//     display: inline-block;
+//     height:100%;
+
+// }
+// .table>thead:last-child>tr:last-child>th:nth-child(2)
+// {
+//     padding-left:40px;
+// }
+// .table> tbody > tr > td:nth-child(2)
+// {
+//     padding-left:50px !important;
+
+// }
+
+
+// }
+
+
+
+
