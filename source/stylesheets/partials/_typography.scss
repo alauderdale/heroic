@@ -54,9 +54,9 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 h1{
-	font-size: 41px;
+	font-size: 38px;
 	font-family:$montserrat-font-name;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 
@@ -90,4 +90,8 @@ h5{
 
 .pinkesh-grey-color{
 	color: $pinkish-grey;
+}
+
+.light-text-color{
+	color: #9AA1A5;
 }

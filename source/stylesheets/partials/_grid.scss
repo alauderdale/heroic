@@ -1,3 +1,44 @@
+/// player management charts container
+.player-charts-container-outter{
+	width: 100%;
+	display: table;
+	.player-charts-container{
+		display: table-row;
+		width: 100%;
+		.col-full-4{
+			display: table-cell;
+		}
+	}
+}
+
+@include breakpoint(lg) {
+	
+	.player-charts-container{
+	display: inline-block;
+	background-color: tint($light-grey-three,40%);
+	.col-full-4{
+		background-color: $background-color;
+		margin-bottom: 10px;
+		display: inline-block;
+		float: left;
+		border-right:none;
+		border-bottom:1px solid $light-grey-three;
+		border-top:1px solid $light-grey-three;
+		&:first-child{
+			border-top:none;
+		}
+
+	}
+}
+
+
+}
+
+
+.col-full-padding{
+	padding: 15px;
+}
+
 .col-full-6{
 	width: 50%;
 }
@@ -19,11 +60,11 @@
 }
 
 
-// @include breakpoint(sm) {
-//   .col-full-2,.col-full-3,.col-full-4,.col-full-5,.col-full-6,.col-full-7,.col-full-8{
-//   	width: 100%!important;
-//   }
-// }
+@include breakpoint(lg) {
+  .col-full-2,.col-full-3,.col-full-4,.col-full-5,.col-full-6,.col-full-7,.col-full-8{
+  	width: 100%!important;
+  }
+}
 
 .full-height{
 	height: 100vh;
@@ -55,3 +96,5 @@
 		height: auto;
 	}
 }
+
+

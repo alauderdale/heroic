@@ -1,0 +1,79 @@
+:javascript
+  $(function () {
+    $('#spectrum').highcharts({
+      credits: {
+        enabled: false
+      },
+      chart: {
+        plotBackgroundColor: '#F9F8F7',
+        plotBorderWidth: 0,
+        plotShadow: false,
+        margin: [0, 0, 0, 0],
+        spacing: [0, 0, 0, 0]
+      },
+      title: {
+        text: 'PLAYER<br>DEVICES<br>',
+        align: 'center',
+        verticalAlign: 'middle',
+        x: 90,
+        y: 50,
+        style: {
+          fontSize: '11px',
+          fontWeight: 'bold',
+          color: '#9AA1A5'
+        }
+      },
+      legend: {
+        itemMarginBottom: 15,
+        align: 'left',
+        verticalAlign: 'top',
+        layout: 'vertical',
+        x: 0,
+        y: 27,
+        symbolRadius: 100,
+        symbolWidth: 12,
+        symbolheight: 10,
+        itemStyle: {
+          color: '#374952',
+          fontWeight: 'semibold'
+        }
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          dataLabels: {
+            enabled: false,
+            distance: 10,
+            style: {
+              fontWeight: 'bold',
+              color: 'white',
+              textShadow: '0px 1px 2px black'
+            }
+          },
+          size: 290,
+          showInLegend: true,
+          startAngle: -90,
+          endAngle: 90,
+          center: ['70%', '120%']
+        }
+      },
+      colors: ['#0C8FD3', '#56BCF4', '#FF8563', '#FFAC97'],
+      series: [{
+        type: 'pie',
+        name: 'Browser share',
+        innerSize: '50%',
+        data: [
+        ['iPod',   10.38],
+        ['iPod Touch',       56.33],
+        ['iPod Mini', 24.03],
+        ['Samsung Galixy',    4.77]
+        ]
+      }]
+    });
+  });
+
+.chart-container-outter
+  .chart-container-inner
+    #spectrum.chart{:style=>"width:483px; height:158px; margin:0 auto;"}

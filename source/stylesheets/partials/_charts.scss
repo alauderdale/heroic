@@ -1,10 +1,20 @@
 .chart-container-outter{
-
 	.chart-container-inner{
 
 	}
 }
 
+//manage players
+
+.manage-players-circle-gauge{
+	width: 116px;
+	height: 116px;
+
+  @include breakpoint(lg) {
+  	width: 120px;
+		height: 120px;
+  }
+}
 
 
 //progress

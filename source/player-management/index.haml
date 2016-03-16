@@ -2,6 +2,82 @@
 "page_title": "Player Management"
 ;;;
 
+%section.border-bottom.player-charts-container-outter
+	.container-fluid.player-charts-container.no-padding
+		.col-full-4.border-right
+			.col-full-padding
+				.half-padding-top
+					.row.half-margin-bottom
+						.col-xs-5
+							%h4
+								Monthly Usage
+						.col-xs-7
+							%form.pull-right
+								%select.form-control.pull-left{:style=>"width:50%;"}
+									%option
+										By Region
+								%select.form-control.pull-left{:style=>"width:50%;"}
+									%option
+										Most Active
+				.row
+					.col-xs-12
+						.half-margin-bottom
+							.row
+								.col-xs-4
+									=partial"charts/monthly-usage-one"
+								.col-xs-4
+									=partial"charts/monthly-usage-two"
+								.col-xs-4
+									=partial"charts/monthly-usage-three"
+		.col-full-4.border-right
+			.border-bottom
+				.col-full-padding
+					.row
+						.col-xs-9
+							%h4.pull-left
+								ACTIVE USERS
+							%p.pull-left.light-text-color{:style=>"line-height:33px; margin-left:5px;"}
+								Oct 29, 2015  2:59pm
+
+						.col-xs-3
+							%form.form-inline.pull-right
+								.form-group
+									%select.form-control
+										%option
+											This Week
+			.col-full-padding.no-padding-bottom
+				.row
+					.col-xs-6.text-center
+						%h5.text-uppercase.light-text-color.no-margin-bottom
+							Monthly
+						%h1.no-margin-top
+							879
+							%span{:style=>"font-size:50%;"}
+								k
+						=partial"charts/monthly-chart-one"
+					.col-xs-6.text-center
+						%h5.text-uppercase.light-text-color.no-margin-bottom
+							Daily
+						%h1.no-margin-top
+							29.3
+							%span{:style=>"font-size:50%;"}
+								k
+						=partial"charts/monthly-chart-two"
+
+					.col-xs-6
+						
+		.col-full-4
+			.col-full-padding
+				.col-full-padding.no-padding-bottom
+					.row
+						.col-xs-12
+							%h4.pull-left
+								ACTIVE USERS
+					.row
+						.col-xs-12
+							=partial"charts/spectrum"
+
+
 %section
 	.container-fluid
 		.row

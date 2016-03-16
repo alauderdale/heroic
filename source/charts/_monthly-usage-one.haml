@@ -1,0 +1,90 @@
+:javascript
+	$(function () {
+
+
+	    Highcharts.chart('monthly-usage-one', {
+
+			    credits: {
+						enabled: false
+					},
+
+	        chart: {
+	            type: 'solidgauge',
+	            backgroundColor: 'transparent',
+	            margin: [0, 0, 0, 0],
+	            spacing: [0, 0, 0, 0]
+	        },
+
+	        title: {
+	            text: 'IN AMERICA',
+	            y: 75,
+	            style: {
+	              				fontSize: '9px',
+	              				color: '#9AA1A5'
+	                    }
+	        },
+
+					tooltip: {
+					    enabled:false
+					},
+
+	        pane: {
+
+	            startAngle: 0,
+	            endAngle: 360,
+	            background: [ { 
+	                outerRadius: '85%',
+	                innerRadius: '115%',
+	                backgroundColor: '#E7E4DB',
+	                borderWidth: 0
+	            }]
+	        },
+
+	        yAxis: {
+	            min: 0,
+	            max: 100,
+	            lineWidth: 0,
+	            tickPositions: []
+	        },
+
+	        plotOptions: {
+	            solidgauge: {
+	                borderWidth: '14px',
+	                dataLabels: {
+	                    enabled: true,
+	                    borderWidth: 0,
+	                    format: '{y} k',
+	                    y: -25,
+		                  style: {
+	                        fontSize: '22px'
+	                    }
+	                },
+	                linecap: 'round',
+	                stickyTracking: false
+	            }
+	        },
+
+	        series: [{
+	            name: 'In America',
+	            borderColor: '#56BCF4',
+	            data: [{
+	                color: 'green',
+	                radius: '100%',
+	                innerRadius: '100%',
+	                y: 50
+	            }]
+	        }]
+	    },
+
+	    function callback() {
+
+
+	    });
+
+
+	});
+	
+
+.chart-container-outter
+	.chart-container-inner
+		#monthly-usage-one.manage-players-circle-gauge
