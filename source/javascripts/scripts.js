@@ -4,6 +4,14 @@ $(document).ready(function(){
 	$( "a.toggle-nav" ).click(function() {
         $( "html" ).toggleClass( "screen-md" );
         $( "html" ).toggleClass( "menu-toggled" );
+        //fixes the odd chart not resizing on menu toggle bug
+        $(".chart").each(function () {
+            var highChart = Highcharts.charts[$(this).data('highchartsChart')];
+            var highChartCont = $(highChart.container).parent();
+            highChart.setSize(highChartCont.width(), highChartCont.height());
+            highChart.hasUserSize = undefined;
+        });
+
     });
 
 });
