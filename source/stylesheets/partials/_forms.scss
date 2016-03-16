@@ -3,6 +3,9 @@ label{
 	letter-spacing: .5px;
 	color: $light-grey-ten;
 }
+select{
+	border-radius: 3px;
+}
 .form-control{
 	border-color:$light-grey-three;
 	box-shadow: none;

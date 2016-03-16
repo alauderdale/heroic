@@ -6,9 +6,6 @@ $(document).ready(function(){
         $( "html" ).toggleClass( "menu-toggled" );
     });
 
-
-
-
 });
 
 
@@ -19,6 +16,7 @@ $(document).ready(function(e) {
 $(window).resize(function(e) {
     breakpointDetect();
 });
+
 
 function breakpointDetect(){
 
