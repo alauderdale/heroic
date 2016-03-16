@@ -71,6 +71,12 @@ a{
 		&:hover{
 			background-color: $light-grey-two;
 		}
+		&:focus{
+			box-shadow: none;
+			outline:none;
+			background-color: $light-grey-two !important;
+			border:1px solid $light-grey-three !important;
+		}
 	}
 	&.btn-secondary{
 		border-radius: 3px;
