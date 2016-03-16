@@ -7,27 +7,32 @@
 		width: 100%;
 		.col-full-4{
 			display: table-cell;
+			vertical-align: top;
 		}
 	}
 }
 
 @include breakpoint(lg) {
-	
-	.player-charts-container{
-	display: inline-block;
-	background-color: tint($light-grey-three,40%);
-	.col-full-4{
-		background-color: $background-color;
-		margin-bottom: 10px;
+	.player-charts-container-outter{
 		display: inline-block;
-		float: left;
-		border-right:none;
-		border-bottom:1px solid $light-grey-three;
-		border-top:1px solid $light-grey-three;
-		&:first-child{
-			border-top:none;
-		}
+		.player-charts-container{
+		display: inline-block;
+		background-color: tint($light-grey-three,40%);
+		.col-full-4{
+			background-color: $background-color;
+			margin-bottom: 10px;
+			display: inline-block;
+			float: left;
+			border-right:none;
+			border-bottom:1px solid $light-grey-three;
+			border-top:1px solid $light-grey-three;
+			width: 100%;
+			clear: both;
+			&:first-child{
+				border-top:none;
+			}
 
+		}
 	}
 }
 
