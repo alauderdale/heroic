@@ -22,12 +22,14 @@
 					.col-xs-12
 						.half-margin-bottom
 							.row
-								.col-xs-4
-									=partial"charts/monthly-usage-one"
-								.col-xs-4
-									=partial"charts/monthly-usage-two"
-								.col-xs-4
-									=partial"charts/monthly-usage-three"
+								.col-xs-12
+									.circles-container.full-width.text-center
+										.inline-block
+											=partial"charts/monthly-usage-one"
+										.inline-block
+											=partial"charts/monthly-usage-two"
+										.inline-block
+											=partial"charts/monthly-usage-three"
 		.col-full-4.border-right
 			.border-bottom
 				.col-full-padding

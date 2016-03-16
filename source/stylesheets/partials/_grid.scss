@@ -1,3 +1,5 @@
+
+
 /// player management charts container
 .player-charts-container-outter{
 	width: 100%;
@@ -12,31 +14,55 @@
 	}
 }
 
-@include breakpoint(lg) {
+@include breakpoint(xl) {
 	.player-charts-container-outter{
-		display: inline-block;
-		.player-charts-container{
-		display: inline-block;
-		background-color: tint($light-grey-three,40%);
-		.col-full-4{
-			background-color: $background-color;
-			margin-bottom: 10px;
-			display: inline-block;
-			float: left;
-			border-right:none;
-			border-bottom:1px solid $light-grey-three;
-			border-top:1px solid $light-grey-three;
-			width: 100%;
-			clear: both;
-			&:first-child{
-				border-top:none;
+			.player-charts-container{
+			background-color: tint($light-grey-three,40%);
+			.col-full-4{
+				background-color: $background-color;
+				margin-bottom: 10px;
+				height: 221px;
+				float: left;
+				border-bottom:1px solid $light-grey-three;
+				border-top:1px solid $light-grey-three;
+				width: 50%;
+				&:first-child{
+					width: 100%;
+					border-top:none;
+				}
 			}
-
+			.circles-container{
+				.chart-container-outter{
+					padding: 0 20px;
+				}
+			}
 		}
 	}
 }
 
-
+@include breakpoint(lg) {
+	.player-charts-container-outter{
+			display: inline-block;
+			border-bottom:none!important;
+			.player-charts-container{
+			display: inline-block;
+			background-color: tint($light-grey-three,40%);
+			.col-full-4{
+				background-color: $background-color;
+				margin-bottom: 10px;
+				display: inline-block;
+				float: left;
+				border-right:none;
+				border-bottom:1px solid $light-grey-three;
+				border-top:1px solid $light-grey-three;
+				width: 100%;
+				clear: both;
+				&:first-child{
+					border-top:none;
+				}
+			}
+		}
+	}
 }
 
 

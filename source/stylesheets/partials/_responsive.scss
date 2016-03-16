@@ -11,6 +11,9 @@
    @else if $point == xs {
      @media (max-width: 320px)  { @content ; }
   }
+  @if $point == xl {
+     @media (max-width: 1565px) { @content ; }
+  }
 }
 
 // to use:
