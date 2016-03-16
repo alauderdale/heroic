@@ -1,13 +1,15 @@
 //frameworks
 @import "bourbon/bourbon";
 @import "lib/bootstrap.css";
+@import "lib/font-awesome.css";
 
 //// public partials
 @import "partials/variables";
-@import "partials/grid";
+
 
 //// responsify
 @import "partials/responsive";
+@import "partials/grid";
 
 
 @import "partials/extends";
@@ -26,6 +28,7 @@
 @import "partials/videos";
 @import "partials/images";
 @import "partials/dropdowns";
+@import "partials/charts";
 
 
 //// elements

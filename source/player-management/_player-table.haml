@@ -6,10 +6,7 @@
         .form-inline
           .form-group
             .input-group
-              .input-group-addon
-                %i.material-icons.md-18
-                  search
-              %input.search.form-control{:placeholder => "What you looking for?", :type => "text"}
+              %input.search.form-control.search-icon{:placeholder => "What you looking for?", :type => "text"}
       .form-group.pull-right
         .btn-group{:role=>"group"}
           .dropdown.pull-left
@@ -24,7 +21,7 @@
                       add_circle_outline
                 .form-group.pull-left
                   .input-group{:style=>"width:232px;"}
-                    %input.search.form-control{:placeholder => "Saved Searches", :type => "text"}
+                    %input.search.form-control.search-icon{:placeholder => "Saved Searches", :type => "text"}
                 .clearfix
               -10.times do
                 %li
@@ -55,11 +52,8 @@
               .form-group
                 %label.label-sm
                   Where
-                .input-group.search
-                  .input-group-addon
-                    %i.material-icons.md-18
-                      search
-                  %input.input-sm.form-control
+                .input-group
+                  %input.input-sm.form-control.search-icon
             .col-md-1.col-xs-1
               %h4.margin-top.text-center
                 AND
@@ -104,10 +98,10 @@
               Achievements
             %th 
               Deposits
-            %th.actions-column
+            %th.actions-menu-column
               
         %tbody
-          -30.times do
+          -19.times do
             %tr
               %td 
                 %input.visible-sm.visible-xs{:type=>"checkbox"}
@@ -127,7 +121,7 @@
                 44
               %td.table-actions-row
                 .table-actions
-                  .dropdown
+                  .dropdown.dropdown-hover-menu
                     %a.btn.btn-link{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
                       %i.material-icons.md-18
                         more_vert

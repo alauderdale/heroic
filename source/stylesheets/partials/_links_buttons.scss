@@ -10,6 +10,14 @@ a{
 }
 
 .btn{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-family: $montserrat-font-name;
+	letter-spacing: .17px;
+	border-radius: 3px;
+	&.btn-lg{
+		font-size: 12px;
+	}
 	&:focus{
 		outline:none;
 	}
@@ -22,6 +30,13 @@ a{
 		&:hover{
 			color: shade($light-grey-five, 20%);
 			background: transparent;
+		}
+	}
+	&.btn-primary{
+		background-color: $lightblue;
+		border:none;
+		&:hover{
+			background-color: shade($lightblue,20%);
 		}
 	}
 	&.btn-info{
@@ -38,6 +53,13 @@ a{
 		}
 		i{
 			line-height: 30px;
+		}
+	}
+	&.btn-default{
+		border-radius: 3px;
+		border:1px solid $light-grey-three;
+		&:hover{
+			background-color: $light-grey-two;
 		}
 	}
 }

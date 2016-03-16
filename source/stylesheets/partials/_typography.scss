@@ -9,6 +9,10 @@
   text-transform:uppercase;
 }
 
+.text-lowercase{
+  text-transform:lowercase;
+}
+
 
 //font base
 
@@ -80,4 +84,10 @@ h5{
 	font-size: 11px;
 	font-family:$montserrat-font-name;
 	font-weight: 700;
+}
+
+//colors
+
+.pinkesh-grey-color{
+	color: $pinkish-grey;
 }

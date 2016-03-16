@@ -1,11 +1,34 @@
+label{
+	font-size: 12px;
+	letter-spacing: .5px;
+	color: $light-grey-ten;
+}
 .form-control{
 	border-color:$light-grey-three;
 	box-shadow: none;
-	border-radius: 0;
+	border-radius: 3px;
 	background: white;
+	font-size: 12px;
 	&:focus{
 		box-shadow: none;
 		border:1px solid $lightblue;
+	}
+	&.search-icon{
+		padding-left: 33px;
+		background:white url(../images/search.png) no-repeat 13px center ;
+		background-size:10px 10px;
+	}
+	&.input-lg{
+		font-size:13px;
+		height: 40px;
+	}
+}
+
+//adjusting labels for input lg horz form labels
+
+.input-lg-horz{
+	label{
+		line-height: 27px;
 	}
 }
 
@@ -25,5 +48,11 @@ label{
 		border-color:$light-grey-three;
 		padding-bottom: 2px;
 		border-radius: 0;
-		border-right:none!important;
 	}	
+
+
+	//disabled
+
+	.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+		background: $background-color;
+	}

@@ -1,0 +1,35 @@
+.progress{
+	border-radius: 100px;
+	background: #F4F4F4;
+	box-shadow:none!important;
+	border:none;
+	color:red;
+	height: 17px;
+}
+
+.progress-bar{
+	color:$steel-grey;
+	font-family:$montserrat-font-name;
+	font-weight: 700;
+	line-height: 17px;
+}
+
+	.progress-bar-info{
+		background-color: $water-blue;
+		box-shadow:none!important;
+	}
+	.progress-bar-info-2{
+		background-color: tint($water-blue,80%);
+		box-shadow:none!important;
+	}
+
+	.circle-default{
+		float: left;
+		border-radius: 100px;
+		margin-right: 4px;
+		width: 17px;
+		height: 17px;
+		background-color: $water-blue;
+		position: relative;
+		top:-3px;
+	}

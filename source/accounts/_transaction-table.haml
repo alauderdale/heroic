@@ -1,0 +1,75 @@
+
+.base-heroic-table
+  .panel.panel-default
+    .panel-heading 
+      .form-group.pull-left.table-actions.search-form
+        .form-inline
+          .form-group
+            .input-group
+              %input.search.form-control.search-icon{ :type => "text"}
+      .form-group.pull-right
+        .btn-group{:role=>"group"}
+          .dropdown.pull-left
+            %button.btn.btn-sm.btn-info.border-left{:type=>"button"}
+              %i.material-icons.md-18
+                skip_previous
+            %button.btn.btn-sm.btn-info{:type=>"button"}
+              %i.material-icons.md-18
+                fast_rewind
+            %span.table-page-input
+              %input.form-control.input-sm{:type=>"text", :style=>"width:40px;", :value=>"1"}
+              %span.count-text
+                of 12
+            %button.btn.btn-sm.btn-info{:type=>"button"}
+              %i.material-icons.md-18
+                fast_forward
+            %button.btn.btn-sm.btn-info{:type=>"button"}
+              %i.material-icons.md-18
+                skip_next
+    .clearfix
+
+
+    .table-responsive
+      %table.table.table-striped{:style=>"min-width:767px;"}
+        %thead
+          %tr
+            %th
+              %input{:type=>"checkbox"}
+            %th.active.asc
+              Date
+              .caret
+            %th 
+              Transaction
+            %th 
+              Mau
+            %th 
+              Description
+            %th 
+              Paid
+            %th
+              PDF
+              
+        %tbody
+          -19.times do
+            %tr
+              %td 
+                %input.visible-sm.visible-xs{:type=>"checkbox"}
+              %td 
+                03/07/2016
+              %td 
+                T4NBCZHWBTDV
+              %td 
+                UP TO 50,000 MAU
+              %td 
+                Credit card - ending in 8769
+              %td 
+                %span.muted
+                  $
+                44
+              %td.table-actions-row
+                .table-actions
+                  %a.btn.btn-link{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
+                    %i.material-icons.md-18
+                      file_download
+
+

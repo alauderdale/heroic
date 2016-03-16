@@ -4,15 +4,161 @@
 ;;;
 
 
-%section
-	.col-full-4.pull-left.full-height
-		.padded.no-padding-top
-			.page-header
-				%h4
-					PLAYER DIRECTORY
+%section.full-height-container
+	.col-left-fixed-one.full-height-panel-delth-one
+		.row
+			.col-xs-12
+				.padded.no-padding-top.no-padding-bottom
+					.page-header
+						%h4
+							Billing
+					.panel.panel-default.margin-bottom
+						.panel-body
+							%form
+								.row
+									.col-xs-6
+										.form-group
+											%select.form-control
+												%option
+													Clash of Clans (iOS)
+									.col-xs-6
+										.form-group.pull-right
+											.input-group
+												%span.input-group-btn
+													%button.btn.btn-default{:type=>"button"}
+														%i.material-icons.md-14.pinkesh-grey-color
+															chevron_left
+												%input.form-control.text-center{:type=>"text", :value=>"2016 · March"}
+												%span.input-group-btn
+													%button.btn.btn-default{:type=>"button"}
+														%i.material-icons.md-14.pinkesh-grey-color
+															chevron_right
+							.row
+								.col-xs-4
+									%p.quarter-margin-bottom
+										10,000
+								.col-xs-4
+									%p.quarter-margin-bottom.text-center
+										50,000
+								.col-xs-4
+									%p.quarter-margin-bottom.text-right
+										+50,000
+							.row
+								.col-xs-12
+									.progress
+										.progress-bar.progress-bar-info{:style => "width: 35%"}
+										.progress-bar.progress-bar-info-2{:style => "width: 20%"}
+											14%
+							.row
+								.col-xs-6
+									%h4
+										%span.circle-default
+										CURRENT MAU   ~ 42K
+								.col-xs-6
+									%h4.text-right
+										$69 USD
+		.row
+			.col-xs-12
+				.padded.no-padding-top.no-padding-bottom
+					%form.form-horizontal.input-lg-horz
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Card Number
+							.col-sm-8
+								%input.form-control.input-lg.font-normal-montserrat{:type=>"text", :value=>"•••• •••• •••• 4555", "disabled"=>""}
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Expires On
+							.col-sm-4
+								%select.form-control.input-lg.quarter-margin-bottom
+									%option
+										1 - January
+							.col-sm-4
+								%select.form-control.input-lg.quarter-margin-bottom
+									%option
+										2019
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Security Code
+							.col-sm-3
+								%input.form-control.input-lg.font-normal-montserrat{:type=>"text", :value=>"•••", "disabled"=>""}
+						.form-group.half-margin-bottom
+							%label.col-sm-4.control-label
+								Name on Card
+							.col-sm-8
+								%input.form-control.input-lg{:type=>"text", :value=>"John Doe"}
+						.form-group
+							.col-sm-4
+							.col-sm-8.text-center
+								%i.material-icons.md-12.text-center.pinkesh-grey-color{:style=>"color:#EBEBEB;"}
+									fiber_manual_record
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Email*
+							.col-sm-8
+								%input.form-control.input-lg{:type=>"email", :value=>"john@doe.com", "disabled"=>""}
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								BUSINESS NAME
+							.col-sm-4
+								%input.form-control.input-lg{:type=>"text", :placeholder=>"Your Company"}
+							%label.col-sm-1.control-label
+								VAT
+							.col-sm-3
+								%select.form-control.input-lg
+									%option
+										Yes
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Country*
+							.col-sm-8
+								%select.form-control.input-lg
+									%option
+										United States
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								Address
+							.col-sm-8
+								%input.form-control.input-lg{:type=>"text", :value=>"123 Place Dr."}
+						.form-group.margin-bottom
+							%label.col-sm-4.control-label
+								City
+							.col-sm-4
+								%input.form-control.input-lg{:type=>"text", :value=>"Colorado"}
+							%label.col-sm-1.control-label
+								Zip*
+							.col-sm-3
+								%input.form-control.input-lg{:type=>"text", :value=>"80023"}
+						.form-group.margin-bottom
+							.col-sm-4
+							.col-sm-4
+								%button.btn.btn-primary.btn-lg{:type=>"submit"}
+									Save Changes
+							.col-sm-4
+								%label.text-lowercase
+									*Optional fields
 
-	.col-full-8.pull-left
-		.padded.no-padding-top
-			.page-header
-				%h4
-					Transaction History
+		.triple-padding-bottom
+		.triple-padding-bottom
+
+
+
+
+	.col-right-fluid-one
+		.border-bottom
+			.padded.no-padding-top.no-padding-bottom
+				.page-header.half-margin-bottom
+					.page-header
+						%h4
+							TRANSACTION HISTORY
+		.padded.no-padding-top.no-padding-bottom
+			.page-header.half-margin-bottom.no-margin-top
+				%ul.list-inline.no-margin-bottom
+					%li
+						%h4.no-margin-bottom
+							TRANSACTION DETAILS
+					%li
+						%h3.no-margin-bottom
+							209 Transactions
+			=partial"transaction-table"
+

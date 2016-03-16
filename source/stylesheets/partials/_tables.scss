@@ -12,10 +12,20 @@
 			.form-group{
 				margin-bottom: 0;
 				&.search-form{
+					width:30%;
 					position: relative;
 					top:3px;
-					.input-group{
-						width: 550px;
+					.form-group{
+						width: 100%;
+						.form-inline{
+							width: 100%;
+						}
+						.input-group{
+							width: 100%;
+							.form-control{
+								width: 100%;
+							}
+						}
 					}
 					.input-group-addon{
 						background: white;
@@ -25,7 +35,7 @@
 					}
 					input{
 						border:none;
-						width:550px;
+						overflow: hidden;
 						box-shadow: none;
 						font-weight: 550;
 						font-size: 12px;
@@ -40,12 +50,31 @@
 						box-shadow:0 1px 0 $light-grey-six;
 					}
 				}
+				.table-page-input{
+					width:74px;
+					display: inline-block;
+					height: 20px;
+					padding-top: 5px;
+
+					.form-control{
+						float: left;
+						height: 25px;
+						margin-right: 5px;
+					}
+					.count-text{
+						float: left;
+						line-height: 25px;
+					}
+				}
 				.btn-info{
 					border-radius: 0;
 					background-color: white;
 					&.bordered{
 						border-left:1px solid $light-grey-three;
 						border-right:1px solid $light-grey-three;
+					}
+					&.border-left{
+						border-left:1px solid $light-grey-three;
 					}
 					&:last-of-type{
 						border-right:none;
@@ -106,7 +135,7 @@
 		}
 	}
 	th{
-		&.actions-column{
+		&.actions-menu-column{
 			width:168px;
 			  @include breakpoint(md) {
 			    
@@ -116,7 +145,7 @@
 	tr{
 		border-color:$light-grey-three;
 		&:hover{
-			.dropdown{
+			.dropdown-hover-menu{
 				visibility: visible!important;
 				text-align: right;
 			}
@@ -136,7 +165,7 @@
 					color: shade($light-grey-five, 20%);
 				}
 			}
-			.dropdown{
+			.dropdown-hover-menu{
 				&.open{
 					text-align: left;
 				}

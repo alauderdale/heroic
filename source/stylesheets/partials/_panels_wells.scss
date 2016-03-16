@@ -1,0 +1,7 @@
+.panel{
+	&.panel-default{
+		border-radius: 3px;
+		border:1px solid $light-grey-three;
+		box-shadow:none;
+	}
+}
