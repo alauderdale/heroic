@@ -11,13 +11,28 @@
 						%h4
 							Monthly Usage
 					.col-xs-7
-						%form.pull-right
-							%select.form-control.pull-left{:style=>"width:50%;"}
-								%option
-									By Region
-							%select.form-control.pull-left{:style=>"width:50%;"}
-								%option
-									Most Active
+						.pull-right
+							.btn-group{ :role => "group"}
+								.btn-group{:role => "group"}
+									%button.btn.btn-secondary.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										by Region
+										.caret
+									%ul.dropdown-menu
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
+								.btn-group{:role => "group"}
+									%button.btn.btn-default.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										Most Active
+										.caret
+									%ul.dropdown-menu
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
+
+
 				.row
 					.col-xs-12
 						.half-margin-bottom
@@ -41,11 +56,15 @@
 								Oct 29, 2015  2:59pm
 
 						.col-xs-3
-							%form.form-inline.pull-right
-								.form-group
-									%select.form-control
-										%option
-											This Week
+							.pull-right
+								%button.btn.btn-default.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+									This Week
+									.caret
+								%ul.dropdown-menu
+									-3.times do
+										%li
+											%a{:href => "#"} 
+												Select
 			.col-full-padding.no-padding-bottom
 				.row
 					.col-xs-6.text-center
