@@ -2,7 +2,7 @@
 	.container-fluid
 		.navbar-header
 			.navbar-brand
-				%a.logo{:href=>"/player-management"}
+				%a.logo{:href=>"player-management/index.html"}
 			.toggle-container
 				%ul.nav.navbar-nav
 					%li
@@ -14,7 +14,7 @@
 				%li
 					%ol.breadcrumb
 						%li
-							%a{:href=>"/player-management"}
+							%a{:href=>"player-management/index.html"}
 								%i.material-icons.md-18
 									home
 						%li.current
@@ -34,7 +34,7 @@
 								4
 				%li.border-left.admin-dropdown
 					%a{:href=>"#", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"}
-						%img.img-circle.admin-avatar{:width=>"34px", :height=>"34px", :src=>"../images/pons_avatar.png"}
+						%img.img-circle.admin-avatar{:width=>"34px", :height=>"34px", :src=>"images/pons_avatar.png"}
 						PonsGroup
 						%i.material-icons.md-18
 							expand_more
@@ -45,12 +45,12 @@
 									videogame_asset
 								My Games
 						%li
-							%a{:href=>"/accounts"}
+							%a{:href=>"accounts/index.html"}
 								%i.material-icons.md-18
 									account_circle
 								My Account
 						%li
-							%a{:href=>"/accounts"}
+							%a{:href=>"accounts/index.html"}
 								%i.material-icons.md-18
 									payment
 								Billing Info
