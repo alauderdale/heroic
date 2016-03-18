@@ -17,6 +17,15 @@
   
 }
 
+//active users
+
+.active-users-chart{
+	height: 77px;
+	@include breakpoint(xl) {
+		height: 70px;
+	}
+}
+
 
 //progress
 
