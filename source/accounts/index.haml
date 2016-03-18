@@ -10,7 +10,7 @@
 			.row
 				.col-xs-12
 					.padded.no-padding-top.no-padding-bottom
-						.page-header
+						.page-header.no-margin-bottom
 							%h4
 								Billing
 						.panel.panel-default.margin-bottom{:style=>"min-height:193px;"}
@@ -23,16 +23,16 @@
 													%option
 														Clash of Clans (iOS)
 										.col-xs-6
-											.form-group.pull-right
+											.form-group.pull-right.date-ticker
 												.input-group
 													%span.input-group-btn
-														%button.btn.btn-default{:type=>"button"}
-															%i.material-icons.md-14.pinkesh-grey-color
+														%button.btn.btn-default.btn-chevron{:type=>"button"}
+															%i.material-icons.md-16.pinkesh-grey-color
 																chevron_left
 													%input.form-control.text-center{:type=>"text", :value=>"2016 · March"}
 													%span.input-group-btn
-														%button.btn.btn-default{:type=>"button"}
-															%i.material-icons.md-14.pinkesh-grey-color
+														%button.btn.btn-default.btn-chevron{:type=>"button"}
+															%i.material-icons.md-16.pinkesh-grey-color
 																chevron_right
 								.row
 									.col-xs-4
@@ -148,7 +148,7 @@
 		.col-right-fluid-one
 			.border-bottom
 				.padded.no-padding-top
-					.page-header
+					.page-header.no-margin-bottom
 						%h4
 							TRANSACTION HISTORY
 					

@@ -1,3 +1,10 @@
+@include breakpoint(lg) {
+	.full-width-md{
+		width: 100%;
+		display: inline-block;
+	}
+}
+
 
 
 /// player management charts container

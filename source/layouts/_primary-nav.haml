@@ -6,7 +6,7 @@
 					.player-select
 						%h3.pull-left
 							%a{:href=>"#"}
-								%img.img-circle.menu-avatar.quarter-margin-right{:src=>"http://placehold.it/32x32", :width=>"32px", :height=>"32px"}
+								%img.img-circle.menu-avatar.quarter-margin-right{:src=>"../images/avatar_game.png", :width=>"32px", :height=>"32px"}
 								Clash of Clans
 					.player-settings
 						%a.pull-right{:href=>"#"}
@@ -66,19 +66,34 @@
 					.team-actions.clearfix
 						%span.pull-right
 							%a{:href=>"#"}
-								%i.material-icons.md-18
+								%i.material-icons.md-16
 									more_horiz
 						%span.pull-right.quarter-margin-right
 							%a{:href=>"#"}
-								%i.material-icons.md-18
+								%i.material-icons.md-16
 									add_circle_outline
 					%p{"aria-controls" => "team", "aria-expanded" => "true", "data-target" => "#team", "data-toggle" => "collapse"}
 						%span.caret
 						TEAM
 					%ul#team.team-list.collapse.in
-						-9.times do
-							%li.online
-								%img.img-circle.menu-avatar{:src=>"http://placehold.it/32x32"}
+						%li.online
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_1.png"}
+						%li.online
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_2.png"}
+						%li.online
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_3.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_4.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_5.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_6.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_7.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_8.png"}
+						%li
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_9.png"}
 						.clearfix
 		%section.primary-menu-content-md.primary-menu
 			%ul.menu-section.text-center
@@ -121,12 +136,19 @@
 								%i.material-icons.md-24.menu-icon
 									bug_report
 			%ul.menu-section
-				%ul
+				%ul.text-center.team-list
 					%li
-						%ul.text-center
-							%li
-								%a{:href=>"#"}
-									%img.img-circle.menu-avatar{:src=>"http://placehold.it/32x32"}
-								%ul.count
-									%li
-										+4
+						%a{:href=>"#"}
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_1.png"}
+					%li
+						%a{:href=>"#"}
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_2.png"}
+					%li
+						%a{:href=>"#"}
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_3.png"}
+					%li
+						%a{:href=>"#"}
+							%img.img-circle.menu-avatar{:src=>"../images/user_avatar_4.png"}
+					%li.count
+						%a{:href=>"#"}
+							+4

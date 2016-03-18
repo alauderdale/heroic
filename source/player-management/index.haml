@@ -8,7 +8,7 @@
 			.col-full-padding
 				.row.half-margin-bottom
 					.col-xs-5
-						%h4
+						%h4.half-padding-left
 							Monthly Usage
 					.col-xs-7
 						.pull-right
@@ -38,7 +38,7 @@
 						.half-margin-bottom
 							.row
 								.col-xs-12
-									.circles-container.full-width.text-center
+									.circles-container.full-width.text-center.half-padding-top
 										.inline-block
 											=partial"charts/monthly-usage-one"
 										.inline-block
@@ -47,10 +47,10 @@
 											=partial"charts/monthly-usage-three"
 		.col-full-4.border-right
 			.border-bottom
-				.col-full-padding
+				.col-full-padding.no-padding-bottom
 					.row
 						.col-xs-9
-							%h4.pull-left
+							%h4.pull-left.half-padding-left
 								ACTIVE USERS
 							%p.pull-left.light-text-color{:style=>"line-height:33px; margin-left:5px;"}
 								Oct 29, 2015  2:59pm
@@ -65,23 +65,25 @@
 										%li
 											%a{:href => "#"} 
 												Select
-			.col-full-padding.no-padding-bottom
+			.col-full-padding.no-padding-bottom.no-padding-top
 				.row
-					.col-xs-6.text-center
-						%h5.text-uppercase.light-text-color.no-margin-bottom
-							Monthly
-						%h1.no-margin-top
-							879
-							%span{:style=>"font-size:50%;"}
-								k
+					.col-xs-6.text-center.border-right
+						.half-padding-bottom
+							%h5.text-uppercase.light-text-color.no-margin-bottom
+								Monthly
+							%h1.no-margin-top
+								879
+								%span{:style=>"font-size:50%;"}
+									k
 						=partial"charts/monthly-chart-one"
 					.col-xs-6.text-center
-						%h5.text-uppercase.light-text-color.no-margin-bottom
-							Daily
-						%h1.no-margin-top
-							29.3
-							%span{:style=>"font-size:50%;"}
-								k
+						.half-padding-bottom
+							%h5.text-uppercase.light-text-color.no-margin-bottom
+								Daily
+							%h1.no-margin-top
+								29.3
+								%span{:style=>"font-size:50%;"}
+									k
 						=partial"charts/monthly-chart-two"
 
 					.col-xs-6
@@ -90,7 +92,7 @@
 			.col-full-padding
 				.row
 					.col-xs-12
-						%h4.pull-left
+						%h4.pull-left.half-padding-left
 							ACTIVE USERS
 				.row
 					.col-xs-12

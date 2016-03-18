@@ -5,8 +5,17 @@
       .form-group.pull-left.table-actions.search-form
         .form-inline
           .form-group
+            %div{:style=>"float:left; z-index:9999; position:relative; top:8px; left:30px; margin-bottom:-24px;"}
+              username
+              %span.modifier.modifier-one.quarter-margin-right
+                phil
+              %span.modifier.modifier-two.quarter-margin-right
+                >
+              %span.modifier.modifier-one.quarter-margin-right
+                100
             .input-group
-              %input.search.form-control.search-icon{:placeholder => "What you looking for?", :type => "text"}
+              %input.search.form-control.search-icon{:placeholder => "", :type => "text"}
+
       .form-group.pull-right
         .btn-group{:role=>"group"}
           .dropdown.pull-left
@@ -40,51 +49,67 @@
     #search-filters.collapse
       .panel-body.filters
         %form
-          .row
-            .col-md-2.col-xs-4
-              .form-group
-                %label.label-sm
-                  Where
-                %select.input-sm.form-control
-                  %option
+          .full-width-md
+            .form-group.pull-left.half-margin-right
+              %label.label-sm
+                Where
+              .input-group
+                .btn-group{:style=>"width:150px;"}
+                  %button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
                     User
-            .col-md-3.col-xs-7
-              .form-group
-                %label.label-sm
-                  Where
-                .input-group
-                  %input.input-sm.form-control.search-icon
-            .col-md-1.col-xs-1
-              %h4.margin-top.text-center
+                    %span.pull-right
+                      .caret
+                  %ul.dropdown-menu
+                    -3.times do
+                      %li
+                        %a{:href => "#"} 
+                          Select
+            .form-group.pull-left.half-margin-right
+              %label.label-sm
+                Where
+              .input-group.filter-search-for
+                %input.input-sm.form-control.search-icon.full-width
+            .form-group.pull-left.half-margin-right
+              %h4.margin-top
                 AND
-            .col-md-3.col-xs-4
-              .form-group
-                %label.label-sm
-                  Where
-                %select.input-sm.form-control
-                  %option
-                    Deposits
-            .col-md-3.col-xs-8
-              .row
-                .col-xs-5
-                  %label.label-sm
-                    Min
-                  %input.input-sm.form-control
-                .col-xs-5{:style=>"position:relative; left:-31px;"}
-                  %label.label-sm
-                    Min
-                  %input.input-sm.form-control
-                .col-xs-2
-                  %button.btn.btn-info.btn-clear{:type=>"button"}
-                    %i.material-icons.md-18
-                      cancel
+        .full-width-md
+          .form-group.pull-left.half-margin-right
+            %label.label-sm
+              Where
+            .input-group
+              .btn-group{:style=>"width:150px;"}
+                %button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+                  Deposits
+                  %span.pull-right
+                    .caret
+                %ul.dropdown-menu
+                  -3.times do
+                    %li
+                      %a{:href => "#"} 
+                        Select
+
+          .form-group.pull-left.half-margin-right{:style=>"width:120px;"}
+            %label.label-sm
+              Min
+            %input.input-sm.form-control
+          .form-group.pull-left{:style=>"position:relative; right:20px; width:120px;"}
+            %label.label-sm
+              Max
+            %input.input-sm.form-control
+          .form-group.pull-left
+            .input-group
+              %button.btn.btn-info.btn-clear{:type=>"button"}
+                %i.material-icons.md-18
+                  cancel
 
     .table-responsive
       %table.table.table-striped{:style=>"min-width:767px;"}
         %thead
           %tr
             %th
-              %input{:type=>"checkbox"}
+              %input.checkbox-custom{:type=>"checkbox"}
+              %label.checkbox-custom-label
+
             %th.active.asc
               Username
               .caret

@@ -44,19 +44,18 @@
       plotOptions: {
         pie: {
           dataLabels: {
-            enabled: false,
-            distance: 10,
+            distance: -30,
             style: {
               fontWeight: 'bold',
               color: 'white',
-              textShadow: '0px 1px 2px black'
+              textShadow: '0 1px 1px rgba(0,0,0,.9)'
             }
           },
-          size: 290,
+          size: 270,
           showInLegend: true,
           startAngle: -90,
           endAngle: 90,
-          center: ['70%', '120%']
+          center: ['70%', '110%']
         }
       },
       colors: ['#0C8FD3', '#56BCF4', '#FF8563', '#FFAC97'],
@@ -74,6 +73,6 @@
     });
   });
 
-.chart-container-outter
+.chart-container-outter{:style=>"position:relative; top:10px;"}
   .chart-container-inner
     #spectrum.chart{:style=>"width:483px; height:158px; margin:0 auto;"}

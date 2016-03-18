@@ -1,3 +1,4 @@
+
 label{
 	font-size: 12px;
 	letter-spacing: .5px;
@@ -54,8 +55,46 @@ label{
 	}	
 
 
-	//disabled
+//disabled
 
-	.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
-		background: $background-color;
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+	background: $background-color;
+}
+
+
+//checkboxes
+
+
+
+//date ticker
+
+.date-ticker{
+	.btn-chevron{
+		padding: 4px 10px 0px 10px;
 	}
+}
+
+//search labels
+
+.modifier{
+	  display: inline;
+    padding: .2em .6em .3em;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+    z-index: 999;
+    color: $charcoal-grey;
+    border:1px solid #38B0E4;
+    &.modifier-one{
+    	background: tint(#38B0E4,90%);
+    	border-color:#38B0E4;
+    }
+    &.modifier-two{
+    	background: tint(#FF8563,90%);
+    	border-color:#FF8563;
+    }
+}

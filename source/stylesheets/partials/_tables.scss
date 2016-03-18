@@ -1,4 +1,8 @@
 .base-heroic-table{
+	input[type=checkbox] {
+	  position: relative;
+	  left:4px;
+	}
 	.panel-default{
 		padding: 0;
 		border-radius:0;
@@ -100,11 +104,20 @@
 			border-color:$light-grey-three;
 			background-color: $light-grey-six;
 			border-top:1px solid $light-grey-three;
+			.form-control{
+				border-radius: 0!important;
+			}
 			&.filters{
+				.filter-search-for{
+					width:150px;
+					@include breakpoint(lg) {
+						width: 234px;
+					}
+				}
 				.btn-clear{
 					position: relative;
-					right: 60px;
 					top: 16px;
+					right:20px;
 				}
 			}
 		}
@@ -172,7 +185,6 @@
 				text-align: right;
 			  @include breakpoint(md) {
 			    visibility: visible;
-			    text-align: left;
 			  }
 				visibility: hidden;
 				ul.dropdown-menu{

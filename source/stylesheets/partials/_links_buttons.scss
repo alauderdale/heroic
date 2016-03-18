@@ -55,11 +55,13 @@ a{
 		border:none;
 		&:hover{
 			color: shade($light-grey-five, 20%);
+			border:none;
 		}
 		&:active{
 		box-shadow: none;
 		outline:none;
 		background: transparent!important;
+		border:none;
 		}
 		i{
 			line-height: 30px;
