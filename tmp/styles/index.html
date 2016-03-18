@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <title>
+      Styles
+    </title>
+    <link href="../stylesheets/lib/bootstrap.css" rel="stylesheet" /><link href="../stylesheets/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <link href='/images/favicon.ico' rel='shortcut icon'>
+    <script src="../javascripts/lib/jquery.js"></script><script src="../javascripts/lib/bootstrap.js"></script><script src="../javascripts/lib/highcharts.js"></script><script src="../javascripts/lib/highcharts-more.js"></script><script src="../javascripts/lib/modules/solid-gauge.js"></script><script src="../javascripts/scripts.js"></script>
+    <body class='styles styles_index'>
+      <header id='primary-header'>
+        <div class='container-fluid'>
+          <div class='navbar-header'>
+            <div class='navbar-brand'>
+              <a class='logo' href='/player-management'></a>
+            </div>
+            <div class='toggle-container'>
+              <ul class='nav navbar-nav'>
+                <li>
+                  <a class='toggle-nav' href='#'>
+                    <i class='material-icons md-24'>
+                      menu
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class='navbar-toolbar'>
+            <ul class='nav navbar-nav navbar-left'>
+              <li>
+                <ol class='breadcrumb'>
+                  <li>
+                    <a href='/player-management'>
+                      <i class='material-icons md-18'>
+                        home
+                      </i>
+                    </a>
+                  </li>
+                  <li class='current'>
+                    <a href='#'>
+                      
+                    </a>
+                  </li>
+                </ol>
+              </li>
+            </ul>
+            <ul class='nav navbar-nav navbar-right global-actions'>
+              <li class='border-left'>
+                <a href='#'>
+                  <i class='material-icons md-24'>
+                    flash_on
+                  </i>
+                </a>
+              </li>
+              <li class='border-left'>
+                <a href='#'>
+                  <i class='material-icons md-24'>
+                    notifications
+                  </i>
+                  <ul class='count'>
+                    <li>
+                      4
+                    </li>
+                  </ul>
+                </a>
+              </li>
+              <li class='border-left admin-dropdown'>
+                <a aria-expanded='false' aria-haspopup='true' data-toggle='dropdown' href='#'>
+                  <img class='img-circle admin-avatar' height='34px' src='../images/pons_avatar.png' width='34px'>
+                  PonsGroup
+                  <i class='material-icons md-18'>
+                    expand_more
+                  </i>
+                </a>
+                <ul class='dropdown-menu'>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18'>
+                        videogame_asset
+                      </i>
+                      My Games
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/accounts'>
+                      <i class='material-icons md-18'>
+                        account_circle
+                      </i>
+                      My Account
+                    </a>
+                  </li>
+                  <li>
+                    <a href='/accounts'>
+                      <i class='material-icons md-18'>
+                        payment
+                      </i>
+                      Billing Info
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18'>
+                        exit_to_app
+                      </i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <aside class='sidebar-menu'>
+        <div class='viewport'>
+          <section class='primary-menu-content-lg primary-menu'>
+            <ul class='menu-section border-bottom player-container'>
+              <li>
+                <div class='player-select'>
+                  <h3 class='pull-left'>
+                    <a href='#'>
+                      <img class='img-circle menu-avatar quarter-margin-right' height='32px' src='../images/avatar_game.png' width='32px'>
+                      Clash of Clans
+                    </a>
+                  </h3>
+                </div>
+                <div class='player-settings'>
+                  <a class='pull-right' href='#'>
+                    <i class='material-icons md-18'>
+                      settings
+                    </i>
+                  </a>
+                </div>
+                <div class='clearfix'></div>
+              </li>
+            </ul>
+            <ul class='menu-section border-bottom'>
+              <li>
+                <p aria-controls='control-panel' aria-expanded='true' data-target='#control-panel' data-toggle='collapse'>
+                  <span class='caret'></span>
+                  CONTROL PANEL
+                </p>
+                <ul class='collapse in' id='control-panel'>
+                  <li class='active'>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        people
+                      </i>
+                      <span class='menu-text'>
+                        Manage Players
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        assistant_photo
+                      </i>
+                      <span class='menu-text'>
+                        Leaderboards
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        dns
+                      </i>
+                      <span class='menu-text'>
+                        Data Storage
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        insert_chart
+                      </i>
+                      <span class='menu-text'>
+                        Telemetry
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        insert_drive_file
+                      </i>
+                      <span class='menu-text'>
+                        Asset Library
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        cloud_done
+                      </i>
+                      <span class='menu-text'>
+                        Cloud Code
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      <i class='material-icons md-18 menu-icon'>
+                        bug_report
+                      </i>
+                      <span class='menu-text'>
+                        API Debugger
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class='menu-section'>
+              <li>
+                <div class='team-actions clearfix'>
+                  <span class='pull-right'>
+                    <a href='#'>
+                      <i class='material-icons md-16'>
+                        more_horiz
+                      </i>
+                    </a>
+                  </span>
+                  <span class='pull-right quarter-margin-right'>
+                    <a href='#'>
+                      <i class='material-icons md-16'>
+                        add_circle_outline
+                      </i>
+                    </a>
+                  </span>
+                </div>
+                <p aria-controls='team' aria-expanded='true' data-target='#team' data-toggle='collapse'>
+                  <span class='caret'></span>
+                  TEAM
+                </p>
+                <ul class='team-list collapse in' id='team'>
+                  <li class='online'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_1.png'>
+                  </li>
+                  <li class='online'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_2.png'>
+                  </li>
+                  <li class='online'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_3.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_4.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_5.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_6.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_7.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_8.png'>
+                  </li>
+                  <li>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_9.png'>
+                  </li>
+                  <div class='clearfix'></div>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class='primary-menu-content-md primary-menu'>
+            <ul class='menu-section text-center'>
+              <li>
+                <ul>
+                  <li>
+                    <div class='player-select'>
+                      <a href='#'>
+                        <img class='img-circle menu-avatar' src='http://placehold.it/32x32'>
+                      </a>
+                    </div>
+                    <div class='clearfix'></div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class='menu-section border-bottom'>
+              <li>
+                <ul>
+                  <li class='text-center active'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        people
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        assistant_photo
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        dns
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        insert_chart
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        insert_drive_file
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        cloud_done
+                      </i>
+                    </a>
+                  </li>
+                  <li class='text-center'>
+                    <a href='#'>
+                      <i class='material-icons md-24 menu-icon'>
+                        bug_report
+                      </i>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <ul class='menu-section'>
+              <ul class='text-center team-list'>
+                <li>
+                  <a href='#'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_1.png'>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_2.png'>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_3.png'>
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    <img class='img-circle menu-avatar' src='../images/user_avatar_4.png'>
+                  </a>
+                </li>
+                <li class='count'>
+                  <a href='#'>
+                    +4
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </section>
+        </div>
+      </aside>
+      <!-- end menu -->
+      <section id='main'>
+        <section>
+          <div class='row'>
+            <div class='col-md-6'>
+              <h1>
+                Heading 1
+              </h1>
+              <h2>
+                Heading 2
+              </h2>
+              <h3>
+                Heading 3
+              </h3>
+              <h4>
+                Heading 4
+              </h4>
+              <h5>
+                Heading 5
+              </h5>
+              <h6>
+                Heading 6
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
+              </p>
+              <p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
+                </small>
+              </p>
+              <p>
+                <a href='#'>
+                  Linked
+                </a>
+              </p>
+              <p>
+                <a class='btn btn-primary btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+                <a class='btn btn-default btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+                <a class='btn btn-info btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+              </p>
+              <i class='material-icons md-18'>
+                face
+              </i>
+            </div>
+            <div class='col-md-6'>
+              <h1>
+                Heading 1
+              </h1>
+              <h2>
+                Heading 2
+              </h2>
+              <h3>
+                Heading 3
+              </h3>
+              <h4>
+                Heading 4
+              </h4>
+              <h5>
+                Heading 5
+              </h5>
+              <h6>
+                Heading 6
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
+              </p>
+              <p>
+                <small>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis purus interdum sem elementum, vel luctus nisl pharetra. Phasellus ultrices tempor augue condimentum faucibus. Maecenas porta euismod pretium. Aenean ornare eu eros auctor sodales. Integer sit amet tortor eget est blandit sodales. Nam sit amet felis at magna iaculis condimentum. Phasellus sit amet mi fringilla, volutpat ipsum vitae, malesuada odio. Etiam vitae massa porta, porta lacus ac, euismod nibh. Vivamus non pulvinar lorem.
+                </small>
+              </p>
+              <p>
+                <a href='#'>
+                  Linked
+                </a>
+              </p>
+              <p>
+                <a class='btn btn-primary btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+                <a class='btn btn-default btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+                <a class='btn btn-info btn-lg fancybox' href='http://images6.alphacoders.com/316/316963.jpg'>
+                  Click Me
+                </a>
+              </p>
+              <i class='material-icons md-18'>
+                face
+              </i>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- end main content -->
+      
+    </body>
+  </head>
+</html>
