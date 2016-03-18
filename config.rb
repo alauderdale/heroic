@@ -51,7 +51,7 @@ set :images_dir, 'images'
 
 set :build_dir, "tmp"
 
-activate :directory_indexes
+# activate :directory_indexes
 
 activate :livereload
 
