@@ -64,7 +64,42 @@ label{
 
 //checkboxes
 
+//selects
 
+
+
+.heroic-select {
+
+   height: 34px;
+   overflow: hidden;
+   background: url(/images/select_arrow.png) no-repeat right white;
+   border: 1px solid $light-grey-three;
+   border-radius: 3px;
+   &.input-lg{
+   	height: 40px;
+   	line-height: 46px;
+   	select{
+   		position: relative;
+   		top:-11px;
+   	}
+   }
+   }
+
+
+.heroic-select select {
+   background: transparent;
+   padding: 5px;
+   font-size: 13px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+	   &:focus{
+	   	outline:none;
+	   	border:none;
+	   }
+   }
 
 //date ticker
 

@@ -13,12 +13,13 @@
 			border-radius:0;
 			border-color:$light-grey-three;
 			border-bottom:none;
+			min-height: 48px;
 			.form-group{
 				margin-bottom: 0;
 				&.search-form{
 					width:30%;
 					position: relative;
-					top:3px;
+					top:6px;
 					.form-group{
 						width: 100%;
 						.form-inline{
@@ -47,6 +48,10 @@
 							border:none;
 						}
 					}
+				}
+				.btn-info{
+					padding: 8px 12px;
+
 				}
 				.open{
 					.btn-info{
