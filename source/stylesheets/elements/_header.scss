@@ -250,13 +250,13 @@ aside.sidebar-menu{
 								text-align: center;
 								line-height: 52px;
 								border-left:1px solid $black-20;
-								color:$black-20;
+								color: rgba(55, 73, 81, 0.8);
 								&:hover{
 									color:white;
 								}
 								i{
 									position: relative;
-									top:3px;
+									top:8px;
 								}
 							}
 						}
@@ -329,10 +329,6 @@ aside.sidebar-menu{
 
 						padding:5px;
 						float: left;
-						img.menu-avatar{
-							width: 32px;
-							height: 32px;
-						}
 					}
 				}
 			}
@@ -400,6 +396,25 @@ aside.sidebar-menu{
 			}
 		}
 }
+
+a.menu-avatar-container{
+	line-height: 32px;
+	.menu-avatar{
+		width: 32px;
+		height: 32px;
+		background-color: red;
+		float: left;
+		display: block;
+		margin-right: 15px;
+		content: "";
+		background-image: url(../images/avatar_game.png);
+		background-repeat: no-repeat;
+		background-size:100%;
+		-webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+		clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+	}
+}
+
 
 section#main{
 	margin-left:$sidebar-lg-width;

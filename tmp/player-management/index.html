@@ -123,15 +123,15 @@
               <li>
                 <div class='player-select'>
                   <h3 class='pull-left'>
-                    <a href='#'>
-                      <img class='img-circle menu-avatar quarter-margin-right' height='32px' src='/images/avatar_game.png' width='32px'>
+                    <a class='menu-avatar-container' href='#'>
+                      <div class='menu-avatar'></div>
                       Clash of Clans
                     </a>
                   </h3>
                 </div>
                 <div class='player-settings'>
                   <a class='pull-right' href='#'>
-                    <i class='material-icons md-18'>
+                    <i class='material-icons md-22'>
                       settings
                     </i>
                   </a>
@@ -396,7 +396,7 @@
                             by Region
                             <div class='caret'></div>
                           </button>
-                          <ul class='dropdown-menu'>
+                          <ul class='dropdown-menu btn-select-dropdown'>
                             <li>
                               <a href='#'>
                                 Select
@@ -419,7 +419,7 @@
                             Most Active
                             <div class='caret'></div>
                           </button>
-                          <ul class='dropdown-menu'>
+                          <ul class='dropdown-menu btn-select-dropdown' style='left:-53px;'>
                             <li>
                               <a href='#'>
                                 Select
@@ -748,7 +748,7 @@
             </div>
             <div class='col-full-4 border-right'>
               <div class='border-bottom'>
-                <div class='col-full-padding no-padding-bottom'>
+                <div class='col-full-padding' style='padding-bottom:4px;'>
                   <div class='row'>
                     <div class='col-xs-9'>
                       <h4 class='pull-left half-padding-left'>
@@ -764,7 +764,7 @@
                           This Week
                           <div class='caret'></div>
                         </button>
-                        <ul class='dropdown-menu'>
+                        <ul class='dropdown-menu btn-select-dropdown' style='left:20px;'>
                           <li>
                             <a href='#'>
                               Select
@@ -781,6 +781,7 @@
                             </a>
                           </li>
                         </ul>
+                        <div class='clearfix'></div>
                       </div>
                     </div>
                   </div>
@@ -1068,6 +1069,7 @@
                             pie: {
                               dataLabels: {
                                 distance: -30,
+                                format: '{y} %',
                                 style: {
                                   fontWeight: 'bold',
                                   color: 'white',
@@ -1178,7 +1180,7 @@
                         <div class='btn-group' role='group'>
                           <div class='dropdown pull-left'>
                             <button aria-expanded='false' aria-haspopup='true' class='btn btn-sm btn-info bordered' data-toggle='dropdown' type='button'>
-                              <i class='material-icons md-18'>
+                              <i class='material-icons md-24'>
                                 star_border
                               </i>
                             </button>
@@ -1351,7 +1353,7 @@
                             </ul>
                           </div>
                           <button aria-controls='search-filters' aria-expanded='false' class='btn btn-sm btn-info filter-tggle bordered collapsed' data-target='#search-filters' data-toggle='collapse' type='button'>
-                            <i class='material-icons md-18'>
+                            <i class='material-icons md-24'>
                               filter_list
                             </i>
                           </button>
@@ -1423,7 +1425,7 @@
                                     <div class='caret'></div>
                                   </span>
                                 </button>
-                                <ul class='dropdown-menu'>
+                                <ul class='dropdown-menu btn-select-dropdown'>
                                   <li>
                                     <a href='#'>
                                       Select

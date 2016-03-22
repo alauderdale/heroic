@@ -17,7 +17,7 @@
 									%button.btn.btn-secondary.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
 										by Region
 										.caret
-									%ul.dropdown-menu
+									%ul.dropdown-menu.btn-select-dropdown
 										-3.times do
 											%li
 												%a{:href => "#"} 
@@ -26,7 +26,7 @@
 									%button.btn.btn-default.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
 										Most Active
 										.caret
-									%ul.dropdown-menu
+									%ul.dropdown-menu.btn-select-dropdown{:style=>"left:-53px;"}
 										-3.times do
 											%li
 												%a{:href => "#"} 
@@ -47,7 +47,7 @@
 											=partial"charts/monthly-usage-three"
 		.col-full-4.border-right
 			.border-bottom
-				.col-full-padding.no-padding-bottom
+				.col-full-padding{:style=>"padding-bottom:4px;"}
 					.row
 						.col-xs-9
 							%h4.pull-left.half-padding-left
@@ -60,11 +60,12 @@
 								%button.btn.btn-default.dropdown-toggle.btn-select{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
 									This Week
 									.caret
-								%ul.dropdown-menu
+								%ul.dropdown-menu.btn-select-dropdown{:style=>"left:20px;"}
 									-3.times do
 										%li
 											%a{:href => "#"} 
 												Select
+								.clearfix
 			.col-full-padding.no-padding-bottom.no-padding-top
 				.row
 					.col-xs-6.text-center.border-right

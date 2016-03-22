@@ -18,11 +18,15 @@
 								%form
 									.row
 										.col-xs-6
-											.form-group
-												.heroic-select
-													%select.form-control
-														%option
-															Clash of Clans (iOS)
+											%button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+												by Region
+												.pull-right
+													.caret
+											%ul.dropdown-menu.btn-select-dropdown{:style=>"left:15px;"}
+												-3.times do
+													%li
+														%a{:href => "#"} 
+															Select
 										.col-xs-6
 											.form-group.pull-right.date-ticker
 												.input-group
@@ -72,15 +76,25 @@
 								%label.col-xs-4.control-label
 									Expires On
 								.col-xs-4
-									.heroic-select.input-lg
-										%select.form-control.quarter-margin-bottom.input-lg
-											%option
-												1 - January
+									%button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left.btn-lg{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										1 Jan
+										.pull-right
+											.caret
+									%ul.dropdown-menu.btn-select-dropdown{:style=>"left:15px;"}
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
 								.col-xs-4
-									.heroic-select.input-lg
-										%select.form-control.input-lg.quarter-margin-bottom
-											%option
-												2019
+									%button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left.btn-lg{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										2019
+										.pull-right
+											.caret
+									%ul.dropdown-menu.btn-select-dropdown{:style=>"left:15px;"}
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
 							.form-group.margin-bottom
 								%label.col-xs-4.control-label
 									Security Code
@@ -109,18 +123,28 @@
 								%label.col-xs-1.control-label
 									VAT
 								.col-xs-3
-									.heroic-select.input-lg
-										%select.form-control.input-lg
-											%option
-												Yes
+									%button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left.btn-lg{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										Yes
+										.pull-right
+											.caret
+									%ul.dropdown-menu.btn-select-dropdown{:style=>"left:15px;"}
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
 							.form-group.margin-bottom
 								%label.col-xs-4.control-label
 									Country*
 								.col-xs-8	
-									.heroic-select.input-lg
-										%select.form-control.input-lg
-											%option
-												United States
+									%button.btn.btn-default.dropdown-toggle.btn-select.full-width.text-left.btn-lg{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :type => "button"}
+										United States
+										.pull-right
+											.caret
+									%ul.dropdown-menu.btn-select-dropdown{:style=>"left:15px;"}
+										-3.times do
+											%li
+												%a{:href => "#"} 
+													Select
 							.form-group.margin-bottom
 								%label.col-xs-4.control-label
 									Address
