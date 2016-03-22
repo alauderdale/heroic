@@ -1290,12 +1290,20 @@ aside.sidebar-menu {
       /* line 236, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section.player-container li .player-select a {
         color: white; }
-      /* line 239, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 239, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        aside.sidebar-menu .viewport ul.menu-section.player-container li .player-select a:hover i {
+          color: white; }
+        /* line 243, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        aside.sidebar-menu .viewport ul.menu-section.player-container li .player-select a i {
+          color: rgba(255, 255, 255, 0.7);
+          position: relative;
+          top: 8px; }
+      /* line 249, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section.player-container li .player-select i {
         position: relative;
         top: 5px;
         color: rgba(0, 0, 0, 0.2); }
-      /* line 246, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 256, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section.player-container li .player-settings a {
         display: block;
         height: 52px;
@@ -1304,34 +1312,34 @@ aside.sidebar-menu {
         line-height: 52px;
         border-left: 1px solid rgba(0, 0, 0, 0.2);
         color: rgba(55, 73, 81, 0.8); }
-        /* line 254, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 264, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section.player-container li .player-settings a:hover {
           color: white; }
-        /* line 257, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 267, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section.player-container li .player-settings a i {
           position: relative;
           top: 8px; }
-      /* line 265, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 275, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section li {
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         letter-spacing: 0.5px; }
-        /* line 269, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 279, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section li h3 {
           font-size: 14px;
           margin: 10px 0px 10px 10px; }
-        /* line 273, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 283, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section li p {
           padding: 15px 10px 5px 15px;
           cursor: pointer; }
-          /* line 277, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 287, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport ul.menu-section li p.collapsed .caret {
             -webkit-transform: rotate(-90deg);
             -moz-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
             -o-transform: rotate(-90deg);
             transform: rotate(-90deg); }
-          /* line 281, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 291, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport ul.menu-section li p .caret {
             position: relative;
             top: -2px;
@@ -1339,49 +1347,49 @@ aside.sidebar-menu {
             border-left: 5px solid transparent;
             border-right: 5px solid transparent;
             border-top: 5px solid; }
-        /* line 290, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 300, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section li ul {
           margin: 10px 0 14px 0;
           list-style: none; }
-          /* line 293, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 303, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport ul.menu-section li ul li {
             font-size: 15px; }
-            /* line 295, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+            /* line 305, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
             aside.sidebar-menu .viewport ul.menu-section li ul li.active {
               background-color: rgba(0, 0, 0, 0.2); }
-              /* line 297, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+              /* line 307, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
               aside.sidebar-menu .viewport ul.menu-section li ul li.active a {
                 color: white; }
-                /* line 299, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+                /* line 309, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
                 aside.sidebar-menu .viewport ul.menu-section li ul li.active a i {
                   color: white; }
-            /* line 304, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+            /* line 314, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
             aside.sidebar-menu .viewport ul.menu-section li ul li a {
               padding: 9px 15px 9px 22px; }
-              /* line 306, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+              /* line 316, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
               aside.sidebar-menu .viewport ul.menu-section li ul li a:hover {
                 color: white; }
-                /* line 308, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+                /* line 318, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
                 aside.sidebar-menu .viewport ul.menu-section li ul li a:hover i {
                   color: white; }
-              /* line 312, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+              /* line 322, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
               aside.sidebar-menu .viewport ul.menu-section li ul li a i {
                 position: relative;
                 top: 3px;
                 color: rgba(255, 255, 255, 0.4); }
-      /* line 321, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 331, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section .team-actions {
         margin-bottom: -35px;
         margin-right: 15px;
         margin-top: 15px; }
-      /* line 326, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 336, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport ul.menu-section ul.team-list {
         padding: 0 10px; }
-        /* line 328, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 338, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section ul.team-list li {
           padding: 5px;
           float: left; }
-    /* line 337, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+    /* line 347, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
     aside.sidebar-menu .viewport section.primary-menu .online:before {
       content: '';
       width: 10px;
@@ -1394,46 +1402,46 @@ aside.sidebar-menu {
       right: -20px;
       margin-right: -30px;
       border: 1px solid #249ac5; }
-    /* line 356, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+    /* line 366, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
     aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul {
       margin: 0; }
-      /* line 358, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 368, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li {
         text-transform: uppercase;
         font-size: 14px; }
-        /* line 362, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 372, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li.active a {
           background: white;
           color: #7F7F7F;
           box-shadow: inset -1px 0 0 #ded7cf; }
-          /* line 366, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 376, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li.active a i {
             color: #7F7F7F; }
-        /* line 371, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+        /* line 381, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li a {
           padding-top: 23px;
           padding-bottom: 23px;
           color: #A3A3A3;
           border-bottom: 1px solid #ded7cf; }
-          /* line 376, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 386, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li a .menu-text {
             margin-left: 10px;
             position: relative;
             top: -4px; }
-          /* line 381, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 391, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li a i {
             color: #c6c3ba; }
-          /* line 384, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+          /* line 394, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
           aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li a:hover {
             color: #7F7F7F; }
-            /* line 386, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+            /* line 396, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
             aside.sidebar-menu .viewport section.admin-menu ul.menu-section li ul li a:hover i {
               color: #7F7F7F; }
 
-/* line 400, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 410, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 a.menu-avatar-container {
   line-height: 32px; }
-  /* line 402, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+  /* line 412, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
   a.menu-avatar-container .menu-avatar {
     width: 32px;
     height: 32px;
@@ -1448,34 +1456,34 @@ a.menu-avatar-container {
     -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
     clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); }
 
-/* line 419, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 429, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 section#main {
   margin-left: 270px;
   padding-top: 70px; }
 
-/* line 424, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 434, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 .primary-menu-content-md {
   display: none; }
 
-/* line 429, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 439, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 html.screen-md section#main {
   margin-left: 60px; }
-/* line 434, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 444, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 html.screen-md #primary-header .navbar-header .navbar-brand {
   display: none; }
-/* line 439, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+/* line 449, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
 html.screen-md aside.sidebar-menu {
   width: 60px; }
-  /* line 441, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+  /* line 451, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
   html.screen-md aside.sidebar-menu .primary-menu-content-lg {
     display: none; }
-  /* line 445, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+  /* line 455, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
   html.screen-md aside.sidebar-menu .primary-menu-content-md {
     display: block; }
-    /* line 449, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+    /* line 459, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
     html.screen-md aside.sidebar-menu .primary-menu-content-md ul.menu-section ul.team-list {
       margin-top: 10px; }
-      /* line 453, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 463, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       html.screen-md aside.sidebar-menu .primary-menu-content-md ul.menu-section ul.team-list li.count a {
         width: 32px;
         height: 32px;
@@ -1484,25 +1492,25 @@ html.screen-md aside.sidebar-menu {
         border-radius: 100px;
         margin-bottom: 0;
         line-height: 32px; }
-      /* line 463, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 473, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       html.screen-md aside.sidebar-menu .primary-menu-content-md ul.menu-section ul.team-list li a {
         padding: 0 !important;
         margin-bottom: -15px; }
-    /* line 470, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+    /* line 480, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
     html.screen-md aside.sidebar-menu .primary-menu-content-md ul.menu-section li ul {
       margin: 0; }
-      /* line 473, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+      /* line 483, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
       html.screen-md aside.sidebar-menu .primary-menu-content-md ul.menu-section li ul li a {
         padding: 15px 0; }
-  /* line 482, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+  /* line 492, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
   html.screen-md aside.sidebar-menu .admin-menu ul.menu-section li ul li a {
     padding-top: 15px;
     padding-bottom: 15px; }
-    /* line 485, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+    /* line 495, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
     html.screen-md aside.sidebar-menu .admin-menu ul.menu-section li ul li a i {
       position: relative;
       right: 4px; }
-  /* line 490, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
+  /* line 500, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
   html.screen-md aside.sidebar-menu .admin-menu .menu-text {
     display: none; }
 
