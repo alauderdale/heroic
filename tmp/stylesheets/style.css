@@ -1295,7 +1295,7 @@ aside.sidebar-menu {
           color: white; }
         /* line 243, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
         aside.sidebar-menu .viewport ul.menu-section.player-container li .player-select a i {
-          color: rgba(255, 255, 255, 0.7);
+          color: rgba(0, 0, 0, 0.2);
           position: relative;
           top: 8px; }
       /* line 249, /Users/alexlauderdale/Documents/HEROIC/source/stylesheets/elements/_header.scss */
